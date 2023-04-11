@@ -102,3 +102,4 @@ Config = {
     },
 }
 ```
+That's it! You should now be able to use the notification system in your FiveM server. Check the <a href="how-to-use">How To Use</a> page to see how to use the notification system. 
