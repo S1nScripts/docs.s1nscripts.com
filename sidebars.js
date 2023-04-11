@@ -15,7 +15,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Introduction',
-      items: ['intro/welcome', 'intro/policy', 'intro/support'],
+      items: ['intro/welcome', 'intro/faq'],
     },
   ],
 };
