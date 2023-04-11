@@ -19,6 +19,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'FiveM Escrow',
+      items: ['escrow/fivem-escrow'],
+    },
+    {
+      type: 'category',
       label: 'The Notify System',
       items: ['notify/install', 'notify/how-to-use', 'notify/framework']
     }
