@@ -70,10 +70,9 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'introSidebar',
-            position: 'left',
-            label: 'Introduction',
+            label: 'Docs', 
+            to: '/docs/intro/intro',
+            position: 'left'
           },
         ],
       },
@@ -84,8 +83,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Docs',
+                to: '/docs/intro/intro',
               },
             ],
           },
