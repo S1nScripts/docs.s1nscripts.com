@@ -8,11 +8,13 @@ sidebar_label: Installation
 
 # Notification System Installation
 
-Follow these steps to install the notification system:
+Follow these steps to install and configure the notification system:
 
 1. Drag the `s1n_notifysystem` folder into your `resources` directory.
-2. Add the resource to your `server.cfg` file.
-3. Configure the notification system by adding the following Lua code to your `server.cfg` or a separate configuration file:
+2. Start the notification system by adding `start s1n_notifysystem` to your `server.cfg` file.
+3. Configure the system by modifying the values in the `config.lua` file located in the `s1n_notifysystem` folder.
+
+Here is an example of the `config.lua` file:
 
 ```lua
 Config = {

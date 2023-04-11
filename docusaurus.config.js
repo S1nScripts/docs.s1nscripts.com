@@ -105,8 +105,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} S1nScripts, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require("prism-react-renderer/themes/dracula"),
+        additionalLanguages: ['lua'],
       },
     }),
 };
