@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Introduction
-sidebar_label: Introduction
+title: Welcome
+sidebar_label: Welcome
 ---
 
 # S1nScripts Documentation
