@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: Home
+title: Welcome
+sidebar_label: Welcome
 ---
 
 # Welcome to the official S1nScripts documentation
