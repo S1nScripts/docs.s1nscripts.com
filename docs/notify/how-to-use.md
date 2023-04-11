@@ -10,6 +10,8 @@ sidebar_label: How To Use
 
 To use the notification system, you need to trigger the `s1n_notify:notify` event with the following parameters:
 
+## Client-Side
+
 ```lua
 TriggerEvent("s1n_notify:notify", {
 type = "success",
@@ -23,6 +25,7 @@ position = "top-right"
 
 If you're using the code on the client-side, you can use `TriggerEvent` to trigger the notification. However, if you're using the code on the server-side, you need to use `TriggerClientEvent` and pass the source as the first argument. Here's an example of how to use `TriggerClientEvent`:
 
+## Server-Side
 ```lua
 TriggerClientEvent(source, "s1n_notify:notify", {
     type = "success",
