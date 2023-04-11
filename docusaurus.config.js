@@ -71,9 +71,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'generatedSideBars',
+            sidebarId: 'introSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Introduction',
           },
         ],
       },
