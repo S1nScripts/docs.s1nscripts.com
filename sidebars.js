@@ -17,5 +17,10 @@ module.exports = {
       label: 'Introduction',
       items: ['intro/welcome', 'intro/faq'],
     },
+    {
+      type: 'category',
+      label: 'The Notify System',
+      items: ['notify/install']
+    }
   ],
 };
