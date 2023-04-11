@@ -3,7 +3,7 @@ sidebar_position: 0
 title: FiveM Assets Escrow
 sidebar_label: FiveM Assets Escrow
 ---
-![S1nScripts Banner ](https://media.discordapp.net/attachments/791405808587636806/1095223445161246810/45r-01.png?width=1439&height=399)
+![S1nScripts Banner](https://media.discordapp.net/attachments/791405808587636806/1095223445161246810/45r-01.png?width=1439&height=399)
 
 ## FiveM Asset Escrow Errors
 
@@ -21,8 +21,8 @@ To resolve this issue, make sure that your server's license key is owned by the 
 
 ### Failed to verify protected resource X
 
-If you encounter this error, it means that files were corrupted during the download process. This issue often occurs when using FileZilla, as it has a tendency to corrupt files. To avoid this, try using a different FTP client, such as WinSCP.
+If you come across this error, it indicates that the files were damaged during the download process. This problem frequently arises while using FileZilla as it tends to corrupt the files. To prevent this issue, consider using an alternative FTP client like WinSCP.
 
 ### Error parsing script @Y in resource X: @Y: syntax error near '<\‎1>'
 
-This error indicates that the server artifacts are outdated. To resolve this, update to the latest <a href="https://runtime.fivem.net/artifacts/fivem/build_server_windows/master">recommended version</a>.
+This error message indicates that the server artifacts are outdated. In order to resolve this issue, you need to update to the latest <a href="https://runtime.fivem.net/artifacts/fivem/build_server_windows/master">recommended version</a>.
