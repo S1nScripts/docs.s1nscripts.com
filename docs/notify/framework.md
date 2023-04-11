@@ -34,7 +34,7 @@ function ESX.ShowNotification(title, message, type, length, position)
     })
 end
 ```
-Note that you will need to modify any calls to the `ESX.ShowNotification` function in your code to match the new parameters. Here's an example:
+Note that you will need to modify any calls to the `ESX.ShowNotification` function in your scripts to match the new parameters. Here's an example:
 ```lua
 ESX.ShowNotification("Title", "Hello everyone!", "success", 5000, "top-right")
 ```
@@ -85,7 +85,7 @@ function QBCore.Functions.Notify(title, message, type, length, position)
     })
 end
 ```
-Note that you will need to modify any calls to the `QBCore.Functions.Notify` function in your code to match the new parameters. Here's an example:
+Note that you will need to modify any calls to the `QBCore.Functions.Notify` function in your scripts to match the new parameters. Here's an example:
 ```lua
 QBCore.Functions.Notify("Title", "Hello everyone !", "success", 5000, "top-right")
 ```
