@@ -21,6 +21,8 @@ position = "top-right"
 })
 ```
 
+If you're using the code on the client-side, you can use `TriggerEvent` to trigger the notification. However, if you're using the code on the server-side, you need to use `TriggerClientEvent` and pass the source as the first argument. Here's an example of how to use `TriggerClientEvent`:
+
 The `type` parameter corresponds to the type of notification, which can be one of the following values: `info`, `warning`, `success`, `error`, or `message`. 
 
 The `title` parameter corresponds to the title of the notification, which will appear at the top of the notification box.
@@ -32,3 +34,31 @@ The `duration` parameter corresponds to the time you want the notification to be
 The `theme` parameter corresponds to the color theme of the notification, which can be either `colorful` or `white`.
 
 The `position` parameter corresponds to the position where you want the notification to appear on the screen. It can be one of the following values: `top-right`, `top-left`, `bottom-right`, or `bottom-left`.
+
+Here's an example that registers a command that triggers a success notification:
+
+```lua
+-- Client Side
+RegisterCommand("notiftest", function()
+    TriggerEvent("s1n_notify:notify", {
+        type = "success",
+        title = "The Notify System",
+        message = "Thanks for using my notify system! :)",
+        duration = 5000,
+        theme = "colorful",
+        position = "top-right"
+    })
+end, false)
+
+-- Server Side
+RegisterCommand("notiftestserver", function(source, args)
+    TriggerClientEvent(source, "s1n_notify:notify", {
+        type = "success",
+        title = "The Notify System",
+        message = "Thanks for using my notify system! :)",
+        duration = 5000,
+        theme = "colorful",
+        position = "top-right"
+    })
+end, false)
+```
