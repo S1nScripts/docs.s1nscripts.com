@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Setup Notification System in Framework
 sidebar_label: Framework Implementation
 ---

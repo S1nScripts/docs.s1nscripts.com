@@ -20,7 +20,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Notify System',
-      items: ['notify/install', 'notify/how-to-use']
+      items: ['notify/install', 'notify/how-to-use', 'notify/framework']
     }
   ],
 };
