@@ -3,6 +3,7 @@ sidebar_position: 2
 title: FAQ
 sidebar_label: FAQ
 ---
+![S1nScripts Banner](https://media.discordapp.net/attachments/791405808587636806/1095223445161246810/45r-01.png?width=1439&height=399)
 
 # FAQ
 
