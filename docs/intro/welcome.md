@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-# Welcome to the official S1nScripts documentation
+# S1nScripts Documentation
 
 If you have any questions or issues, please don't hesitate to visit our [Discord server](https://discord.gg/S1nScripts).
 
