@@ -12,7 +12,7 @@ Follow these steps to install and configure the notification system:
 
 1. Drag the `s1n_notifysystem` folder into your `resources` directory.
 2. Start the notification system by adding `start s1n_notifysystem` to your `server.cfg` file.
-3. Configure the system by modifying the values in the `config.lua` file located in the `s1n_notifysystem` folder.
+3. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
 
 Here is an example of the `config.lua` file:
 
@@ -102,4 +102,4 @@ Config = {
     },
 }
 ```
-That's it! You should now be able to use the notification system in your FiveM server. Check the <a href="how-to-use">How To Use</a> page to see how to use the notification system. 
+That's it! You should now be able to use the notification system in your FiveM server. Check the <a href="how-to-use">How To Use</a> page to see how to use the notification system.
