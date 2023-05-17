@@ -6,67 +6,57 @@ sidebar_label: How To Use
 
 ![S1nScripts Logo](https://forum.cfx.re/uploads/default/original/4X/7/1/8/718c6f28a9b5ab0dc33bf79288bcb418e7684326.jpeg)
 
-# How to Use the Notification System
 
-To use the notification system, you need to trigger the `s1n_notify:notify` event with the following parameters:
+## Default Types
+- `success`
+- `error`
+- `info`
+- `warning`
+- `message`
 
-## Client-Side
+## Default Positions
+- `top`
+- `top-left`
+- `top-right`
+- `bottom`
+- `bottom-left`
+- `bottom-right`
+
+### Client side
+
+To send a notification from a client-side file, use the `s1n_notify:notify` event:
 
 ```lua
 TriggerEvent("s1n_notify:notify", {
-type = "success",
-title = "title",
-message = text,
-duration = 5000,
-theme = "colorful",
-position = "top-right"
+  type = "success", -- Modify the type by replacing "success" with the type you want (all listed above)
+  title = "The title of the notifcation", -- Replace "The title of the notifcation" with the title you want
+  message = "The text of the notification", -- Replace "The text of the notification" with the text you want
+  duration = 5000, -- The duration of the notification in milliseconds
+  theme = "colorful", -- The theme of the notification (colorful or white)
+  position = "top-right" -- Modify the position of the notification by replacing "top-right" with the position you want (all listed above)
 })
 ```
 
-If you're using the code on the client-side, you can use `TriggerEvent` to trigger the notification. However, if you're using the code on the server-side, you need to use `TriggerClientEvent` and pass the source as the first argument. Here's an example of how to use `TriggerClientEvent`:
+### Server side
 
-## Server-Side
+You can use the `s1n_notify:notify` event to send a notification to the client from a server-side file.
+
+Replace `source` with the source of the player you want to send the notification to. By default in a server-side file, the source is the player who triggered the event.
 ```lua
-TriggerClientEvent(source, "s1n_notify:notify", {
-    type = "success",
-    title = "title",
-    message = text,
-    duration = 5000,
-    theme = "colorful",
-    position = "top-right"
+TriggerEvent("s1n_notify:notify", source, {
+  type = "success", -- Modify the type by replacing "success" with the type you want (all listed above)
+  title = "The title of the notifcation", -- Replace "The title of the notifcation" with the title you want
+  message = "The text of the notification", -- Replace "The text of the notification" with the text you want
+  duration = 5000, -- The duration of the notification in milliseconds
+  theme = "colorful", -- The theme of the notification (colorful or white)
+  position = "top-right" -- Modify the position of the notification by replacing "top-right" with the position you want (all listed above)
 })
 ```
 
-The `type` parameter corresponds to the type of notification, which can be one of the following values: `info`, `warning`, `success`, `error`, or `message`. 
-
-The `title` parameter corresponds to the title of the notification, which will appear at the top of the notification box.
-
-The `message` parameter corresponds to the message you want to display in the notification.
-
-The `duration` parameter corresponds to the time you want the notification to be displayed (in milliseconds). For example, if you want the notification to be displayed for 5 seconds, you should set `duration` to `5000`.
-
-The `theme` parameter corresponds to the color theme of the notification, which can be either `colorful` or `white`.
-
-The `position` parameter corresponds to the position where you want the notification to appear on the screen. It can be one of the following values: `top-right`, `top-left`, `bottom-right`, or `bottom-left`.
-
-Here's an example that registers a command that triggers a success notification:
-
+Example of a server-side file which sends a notification to the player who triggered the /testnotify command:
 ```lua
--- Client Side
-RegisterCommand("notificationclient", function()
-    TriggerEvent("s1n_notify:notify", {
-        type = "success",
-        title = "The Notify System",
-        message = "Thanks for using my notify system! :)",
-        duration = 5000,
-        theme = "colorful",
-        position = "top-right"
-    })
-end, false)
-
--- Server Side
-RegisterCommand("notificationserver", function(source, args)
-    TriggerClientEvent(source, "s1n_notify:notify", {
+RegisterCommand("testnotify", function(source, args)
+    TriggerClientEvent("s1n_notify:notify", source, {
         type = "success",
         title = "The Notify System",
         message = "Thanks for using my notify system! :)",
