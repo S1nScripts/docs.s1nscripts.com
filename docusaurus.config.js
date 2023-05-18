@@ -33,6 +33,14 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
+   routes: {
+    path: '/',
+    component: 'Redirect',
+    exact: true,
+    from: '/',
+    to: '/docs/',
+  },
 
   presets: [
     [
