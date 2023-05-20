@@ -14,7 +14,7 @@ const config = {
   url: 'https://docs.s1nscripts.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs.s1nscripts.com',
+  baseUrl: '/docs.s1nscripts.com/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
