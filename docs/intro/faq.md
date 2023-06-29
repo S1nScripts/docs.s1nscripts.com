@@ -8,7 +8,7 @@ sidebar_label: FAQ
 # FAQ
 
 ### What frameworks are your scripts compatible with?
-Our scripts are currently compatible with ESX and QbCore. However, it is fairly simple to configure the script for another framework, as our scripts are standalone. If you want us to support another framework, please suggest it on our Discord server.
+Our scripts are currently compatible with ESX, QBCore and some are standalone. If you want us to support another framework, please suggest it on our Discord server.
 
 ### Do you provide support for your scripts?
 Yes, we provide support on our Discord server.
