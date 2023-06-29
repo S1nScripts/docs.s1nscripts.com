@@ -24,7 +24,7 @@ Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v
 By default there is two language translations, french and english that you can find in the languages directory.
 To load the one you want, please modify the fxmanifest file and change the "languages/english.lua" to whatever file in LUA with same structure.
 
-Note for modifications on the script:
+:::note
 
 server/api.lua will allow you to:
 - custom notifications
@@ -34,3 +34,5 @@ client/utils.lua will allow you to:
 - custom remove vehicle logic
 - custom the way to get vehicle properties
 - custom the way to set vehicle properties
+
+:::
