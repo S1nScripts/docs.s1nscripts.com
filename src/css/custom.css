@@ -26,5 +26,11 @@
   --ifm-color-primary-light: #00f1a8;
   --ifm-color-primary-lighter: #00fcb0;
   --ifm-color-primary-lightest: #1effbb;
-  --ifm-background-color: #263039;
+  --ifm-navbar-background-color: #161616;
+  --ifm-background-color: #161616 !important;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #1c1c1c !important;
+
 }
