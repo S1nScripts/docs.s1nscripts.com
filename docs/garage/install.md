@@ -6,7 +6,8 @@ sidebar_label: Installation
 
 ![S1nScripts Logo](https://forum.cfx.re/uploads/default/original/4X/6/c/7/6c73a9d63db911aa966b2c9085f4c55a76268db3.jpeg)
 
-# Garage System Installation
+# Garage System 
+## Installation
 
 Follow these steps to install and configure the notification system:
 
