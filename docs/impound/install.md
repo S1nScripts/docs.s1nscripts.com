@@ -4,102 +4,33 @@ title: Installation
 sidebar_label: Installation
 ---
 
-![S1nScripts Logo](https://forum.cfx.re/uploads/default/original/4X/7/1/8/718c6f28a9b5ab0dc33bf79288bcb418e7684326.jpeg)
+![S1nScripts Logo](https://forum.cfx.re/uploads/default/optimized/4X/a/0/f/a0fe33b8e3b6ef3293bf06ddef6af2e6414248e9_2_1380x776.jpeg)
 
-# Notification System Installation
+# Impound System 
+## Installation
 
-Follow these steps to install and configure the notification system:
+Follow these steps to install and configure the impound system:
 
-1. Drag the `s1n_notifysystem` folder into your `resources` directory.
-2. Start the notification system by adding `start s1n_notifysystem` to your `server.cfg` file.
-3. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
+Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
 
-Here is an example of the `config.lua` file:
 
-```lua
-Config = {
-    notificationTypes = {
-        -- Here you can setup new type of notifications.
-        info = {
-            icon = "MdInfo",
-            color = "#4666D7",
-            sound = {
-                enable = true,
-                source = "popup.mp3",
-                volume = 0.75
-            }
-        },
-        warning = {
-            icon = "MdWarning",
-            color = "#E7A526",
-            sound = {
-                enable = true,
-                source = "popup.mp3",
-                volume = 0.5
-            }
-        },
-        success = {
-            icon = "MdCheckCircle",
-            color = "#49AF72",
-            sound = {
-                enable = true,
-                source = "pop.wav",
-                volume = 0.2
-            }
-        },
-        error = {
-            icon = "MdError",
-            color = "#D74646",
-            sound = {
-                enable = true,
-                source = "pop.wav",
-                volume = 1
-            }
-        },
-        message = {
-            icon = "MdMessage",
-            color = "#676767",
-            sound = {
-                enable = true,
-                source = "pop.wav",
-                volume = 1
-            }
-        },
-        --[[
-        TO CREATE A CUSTOM TYPE:
+1. Drag the `menuv` folder into your `resources` directory.
+2. Drag the `s1n_impound` folder into your `resources` directory.
+3. Start the impound system by adding `start s1n_impound` to your `server.cfg` file.
+4. Configure the script by modifying the values in the `config.lua` file located in the `s1n_impound` script folder.
 
-        nameOfTheNotificationType = {
-            icon = "NameOfTheIcon", -- Available icons : https://react-icons.github.io/react-icons/icons?name=md
-            color = "#676767", -- Color in HEX, RGB(A), HSLA..
-            sound = {
-                enable = true, -- Enable or disable sound effect
-                source = "pop.wav", -- Name of the file
-                volume = 1 -- Volume between 0 and 1
-            }
-        },
-        ]]
-    },
+## Configuration
 
-    notifyIntervals = {
-        --[[
-        Example for notifications with interval:
+By default there is two language translations, french and english that you can find in the languages directory.
+To load the one you want, please modify the fxmanifest file and change the "languages/english.lua" to whatever file in LUA with same structure.
 
-        {
-            interval = 10000,
-            notify = {
-                type = "info",
-                title = "Tip",
-                message = "You can press I to open your inventory",
-                duration = 4000,
-                theme = "colorful",
-                position = "top-right"
-            }
-        },
+Note for modifications on the script:
 
-        TO PUT BELOW THE DOUBLE ]
-        ]]
+server/api.lua will allow you to:
+- custom notifications
 
-    },
-}
-```
-That's it! You should now be able to use the notification system in your FiveM server. Check the <a href="how-to-use">How To Use</a> page to see how to use the notification system.
+client/utils.lua will allow you to:
+- custom notifications
+- custom remove vehicle logic
+- custom the way to get vehicle properties
+- custom the way to set vehicle properties
