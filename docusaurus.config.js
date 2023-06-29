@@ -65,7 +65,7 @@ const config = {
         title: 'S1nScripts',
         logo: {
           alt: 'S1nScripts Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
