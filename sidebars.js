@@ -42,5 +42,10 @@ module.exports = {
       label: 'The Rental System',
       items: ['rental/install']
     },
+    {
+      type: 'category',
+      label: 'The DeathScreen',
+      items: ['deathscreen/install']
+    },
   ],
 };
