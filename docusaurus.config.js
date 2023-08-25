@@ -69,8 +69,18 @@ const config = {
         },
         items: [
           {
-            label: 'Docs', 
+            label: 'Documentation',
             to: 'docs/intro/welcome',
+            position: 'left'
+          },
+          {
+            label: 'Webstore',
+            href: 'https://store.s1nscripts.com/',
+            position: 'left'
+          },
+          {
+            label: 'Discord',
+            href: 'https://discord.gg/u9DV5CfKwn',
             position: 'left'
           },
         ],
