@@ -49,6 +49,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Spawn selector',
+      items: ['spawnselector/install']
+    },
+    {
+      type: 'category',
       label: 'The Vending Machine',
       items: ['vendingmachine/install']
     },

@@ -1,0 +1,10 @@
+position: 3 # float position is supported
+label: 'Spawn Selector'
+collapsible: true # make the category collapsible
+collapsed: false # keep the category open by default
+className: red
+link:
+  type: generated-index
+  title: 'Spawn Selector'
+customProps:
+  description: This description can be used in the swizzled DocCard
