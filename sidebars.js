@@ -13,9 +13,14 @@
 module.exports = {
   docs: [
     {
+        type: 'doc',
+        id: 'intro/welcome',
+    },
+    {
       type: 'category',
-      label: 'Introduction',
-      items: ['intro/welcome', 'intro/faq'],
+      label: 'S1nScripts',
+      items: ['intro/faq'],
+      collapsed: false,
     },
     {
       type: 'category',
