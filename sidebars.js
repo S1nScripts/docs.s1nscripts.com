@@ -47,5 +47,10 @@ module.exports = {
       label: 'The DeathScreen',
       items: ['deathscreen/install']
     },
+    {
+      type: 'category',
+      label: 'The Marketplace',
+      items: ['marketplace/install']
+    },
   ],
 };
