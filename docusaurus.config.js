@@ -122,7 +122,7 @@ const config = {
         appId: '',
 
         // Public API key: it is safe to commit it
-        apiKey: '',
+        apiKey: '30b2979318808c627035950e18bbd17d',
 
         indexName: 'documentation',
 
