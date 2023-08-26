@@ -44,6 +44,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Job Center',
+      items: ['jobcenter/install']
+    },
+    {
+      type: 'category',
       label: 'The Rental System',
       items: ['rental/install']
     },
