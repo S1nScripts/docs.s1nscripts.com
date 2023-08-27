@@ -1,5 +1,5 @@
 {
-  "index_name": "test_index",
+  "index_name": "first_index",
   "sitemap_urls": ["https://docs.s1nscripts.com/sitemap.xml"],
   "start_urls": ["https://docs.s1nscripts.com/docs/"],
   "stop_urls": [],
