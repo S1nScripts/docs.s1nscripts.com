@@ -1,7 +1,7 @@
 {
   "index_name": "test_index",
   "sitemap_urls": ["https://docs.s1nscripts.com/sitemap.xml"],
-  "start_urls": ["https://docs.s1nscripts.com/docs"],
+  "start_urls": ["https://docs.s1nscripts.com/docs/"],
   "stop_urls": [],
 
   "sitemap_alternate_links": true,
