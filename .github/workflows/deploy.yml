@@ -39,7 +39,10 @@ jobs:
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
       - name: Write env variables to file
         run: |
-          echo "APPLICATION_ID=${{ secrets.APPLICATION_ID }}\nAPI_KEY=${{ secrets.API_KEY }}" > env_custom.txt
+          echo "APPLICATION_ID=${{ vars.APPLICATION_ID }}\nAPI_KEY=${{ vars.API_KEY }}" > .env
+      - name: Name
+        run: |
+          echo "My ${{ vars.APPLICATION_ID }} and ${{ vars.API_KEY }}"
       - name: Index the new content
         run: |
-          docker run --env-file=env_custom.txt -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper 
+          docker run --env-file=.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper 
