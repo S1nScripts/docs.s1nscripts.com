@@ -37,3 +37,7 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Index the new content
+        run: |
+          CONFIG=$(cat ./algolia.config.json | jq -r tostring)
+          docker run -it --env "APPLICATION_ID=${{ secrets.APPLICATION_ID_SECRET }}" --env "API_KEY=${{ secrets.API_KEY_SECRET }}" --env "CONFIG=$CONFIG" algolia/docsearch-scraper
