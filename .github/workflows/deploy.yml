@@ -42,4 +42,4 @@ jobs:
           echo "APPLICATION_ID=${{ secrets.APPLICATION_ID }}\nAPI_KEY=${{ secrets.API_KEY }}" > .env
       - name: Index the new content
         run: |
-          docker run -it --env-file=.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper 
+          docker run --env-file=.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper 
