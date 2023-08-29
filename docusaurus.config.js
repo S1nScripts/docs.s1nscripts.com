@@ -71,6 +71,11 @@ const config = {
             position: 'left'
           },
           {
+            label: 'Blog',
+            to: 'blog',
+            position: 'left'
+          },
+          {
             label: 'Webstore',
             href: 'https://store.s1nscripts.com/',
             position: 'left'
