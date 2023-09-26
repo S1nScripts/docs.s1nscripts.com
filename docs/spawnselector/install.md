@@ -16,7 +16,14 @@ Follow these steps to install and configure the spawnselector:
 3. Start the script by adding `start s1n_spawnselector` to your `server.cfg` file.
 4. Configure the script by modifying the values in the `config.lua` file located in the `s1n_spawnselector` script folder.
 
-To make it work, please lead to qb-apartments and look for line 447 , 452 , 455,
+
+## Adaptation to ESX
+
+No adaptation needed.
+
+## Adaptation to QBCore
+
+To make it work, please lead to qb-apartments/client/main.lua and look for line 447 , 452 , 455,
 replace the open ui trigger to "spawnselector:openNui"
 
 these functions should be under the calllback "apartments:client:setupSpawnUI".
