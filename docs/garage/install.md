@@ -11,7 +11,7 @@ sidebar_label: Installation
 
 Follow these steps to install and configure the notification system:
 
-Download the pmc-instance (fork by myself) https://github.com/s1nyx/pmc-instance/
+Download this pmc-instance (fork by myself) https://github.com/s1nyx/pmc-instance/
 Go to the button "Code" > "Download ZIP"
 
 Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
