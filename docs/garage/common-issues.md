@@ -23,8 +23,6 @@ This error is caused by one of the following reasons:
 
 #### Error regarding : attempt to index a nil value (global 'Functions')
 
-![image](https://cdn.discordapp.com/attachments/1153041009006100550/1153041025984638976/image.png?ex=6513d163&is=65127fe3&hm=cb53c9c667591dd6e0ea5d4002eb29b58620bf30d8661726f8bbbcd2ebedf808&)
-
 This error is caused by one of the following reasons:
 - pmc-instance not found (see above #pmc-instance-not-found)
 - `menuv` is not found in your resources folder
