@@ -70,7 +70,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Marketplace',
-      items: ['marketplace/install']
+      items: ['marketplace/install', 'marketplace/configuration']
     },
   ],
 };
