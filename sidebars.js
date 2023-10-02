@@ -25,7 +25,7 @@ module.exports = {
     {
       type: 'category',
       label: 'FiveM Escrow',
-      items: ['escrow/fivem-escrow'],
+      items: ['escrow/fivem-escrow', 'escrow/asset-transfers'],
     },
     {
       type: 'category',
@@ -60,7 +60,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Spawn selector',
-      items: ['spawnselector/install']
+      items: ['spawnselector/install', 'spawnselector/custom-modifications']
     },
     {
       type: 'category',
