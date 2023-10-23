@@ -30,52 +30,52 @@ module.exports = {
     {
       type: 'category',
       label: 'The Garage System',
-      items: ['garage/install', 'garage/common-issues']
+      items: ['garage/install', 'garage/common-issues', 'garage/config']
     },
     {
       type: 'category',
       label: 'The Impound System',
-      items: ['impound/install']
+      items: ['impound/install', 'impound/config']
     },
     {
       type: 'category',
       label: 'The Notify System',
-      items: ['notify/install', 'notify/how-to-use', 'notify/framework']
+      items: ['notify/install', 'notify/how-to-use', 'notify/framework', 'notify/config']
     },
     {
       type: 'category',
       label: 'The Job Center',
-      items: ['jobcenter/install']
+      items: ['jobcenter/install', 'jobcenter/config']
     },
     {
       type: 'category',
       label: 'The Rental System',
-      items: ['rental/install']
-    },
-    {
-      type: 'category',
-      label: 'The DeathScreen',
-      items: ['deathscreen/install']
+      items: ['rental/install', 'rental/config']
     },
     {
       type: 'category',
       label: 'The Spawn selector',
-      items: ['spawnselector/install', 'spawnselector/custom-modifications']
+      items: ['spawnselector/install', 'spawnselector/custom-modifications', 'spawnselector/config']
     },
     {
       type: 'category',
       label: 'The Vending Machine',
-      items: ['vendingmachine/install']
+      items: ['vendingmachine/install', 'vendingmachine/config']
     },
     {
       type: 'category',
       label: 'The Marketplace',
-      items: ['marketplace/install', 'marketplace/configuration']
+      items: ['marketplace/install', 'marketplace/configuration', 'marketplace/config']
     },
     {
       type: 'category',
       label: 'The ATM Robbery',
-      items: ['atmrobbery/install']
+      items: ['atmrobbery/install', 'atmrobbery/config']
+    },
+    {
+      type: 'category',
+      label: 'The NPC Placer',
+      items: ['npcplacer/config']
     },
   ],
 };
