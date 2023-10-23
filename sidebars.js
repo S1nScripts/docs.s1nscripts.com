@@ -72,5 +72,10 @@ module.exports = {
       label: 'The Marketplace',
       items: ['marketplace/install', 'marketplace/configuration']
     },
+    {
+      type: 'category',
+      label: 'The ATM Robbery',
+      items: ['atmrobbery/install']
+    },
   ],
 };
