@@ -20,6 +20,6 @@ Some statistics about our webstore:
 - QBCore, ESX, and Standalone scripts versions
 
 
-If you have any questions or issues, please don't hesitate to visit our [Discord server](https://discord.gg/S1nScripts).
+If you have any questions or issues, please don't hesitate to visit our [Discord server](https://discord.gg/TwvEM5wX).
 
 Please note that we only provides support to our certified customers. However, if you have a question, feel free to ask.
