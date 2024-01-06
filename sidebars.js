@@ -74,6 +74,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Banking System',
+      items: ['banking/install', 'banking/config']
+    },
+    {
+      type: 'category',
       label: 'The NPC Placer',
       items: ['npcplacer/config']
     },
