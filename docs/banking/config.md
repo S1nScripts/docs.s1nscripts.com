@@ -87,16 +87,3 @@ Config.SocietyRanks = {
     }
 }
 ```
----
-sidebar_position: 1
-title: Config
-sidebar_label: Config
----
-
-# Banking System
-## Config file
-
-For both QBCore and ESX :
-
-```lua
-```
