@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'FiveM Escrow',
+      label: 'About FiveM Escrow',
       items: ['escrow/fivem-escrow', 'escrow/asset-transfers'],
     },
     {
