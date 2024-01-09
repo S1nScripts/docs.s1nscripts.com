@@ -21,8 +21,14 @@ Config.Framework = {
     OldESX         = false, -- Set to true if you're using an older version of ESX which still uses the ESX event esx:getSharedObject
     ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event
     ESXFileName    = 'es_extended', -- The name of the ESX resource
-    SQLWrapper     = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
+    SQLWrapper     = 'oxmysql' --  oxmysql (HIGHLY RECOMMANDED) / mysql-async / ghmattimysql
 }
+
+-- Set to false if you don't want to use ox-target
+Config.UseOxTarget = true
+
+-- Set to true if you want to use qb-target
+Config.UseQBTarget = false
 
 -- Add the url to your Discord webhook to receive notifications for player transactions
 Config.WebhookLink = ''
