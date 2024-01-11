@@ -50,7 +50,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Rental System',
-      items: ['rental/install', 'rental/config']
+      items: ['carrental/install', 'carrental/config']
     },
     {
       type: 'category',
