@@ -21,7 +21,17 @@ Config.Framework = {
     OldESX         = false, -- Set to true if you're using an older version of ESX which still uses the ESX event esx:getSharedObject
     ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event
     ESXFileName    = 'es_extended', -- The name of the ESX resource
-    SQLWrapper     = 'oxmysql' --  oxmysql (HIGHLY RECOMMANDED) / mysql-async / ghmattimysql
+    SQLWrapper     = 'oxmysql' --  oxmysql (HIGHLY RECOMMANDED) / mysql-async (deprecated) / ghmattimysql (deprecated)
+}
+
+-- You need to verify that the following scripts are exactly named like this or change the names here
+Config.exportsScripts = {
+    -- FOR QBCore ONLY
+    qbManagement = 'qb-management',
+
+    -- For both ESX and QBCore
+    oxTarget     = 'ox_target',
+    qbTarget     = 'qb-target'
 }
 
 -- Set to false if you don't want to use ox-target
