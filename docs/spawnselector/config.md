@@ -34,7 +34,12 @@ Config = {
         color = 15844367,
         title = "Player log"
     },
+    -- Show the button "Spawn to last location" if set to true
     showLastSpawn = true,
+    -- Set to false ONLY if you want to show the UI multiple times with other scripts. (Recommended if you are a developer and know what you're doing)
+    showSpawnSelectorOnce = true,
+
+    -- Every spawn locations
     spawns = {
         [1] = {
             locationName = 'North Motel',
