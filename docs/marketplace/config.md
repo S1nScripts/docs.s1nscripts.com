@@ -106,7 +106,7 @@ Config.Marketplaces = {
             BobUpAndDown = true,
             FaceCamera = true,
             MarkerDistance = 5.0,
-            TextDistance = 2.0
+            TextDistance = 2.0 
         },
         -- If you want to disable the possibility to sell vehicles, set this to true otherwise set it to false
         DisableVehicles = false,
