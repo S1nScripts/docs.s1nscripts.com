@@ -29,3 +29,9 @@ This error is caused by one of the following reasons:
 - The `menuv` resource is not exactly named `menuv`
 - The `menuv` resource doesn't contain a `fxmanifest.lua` file
 - The `menuv` resource is not started before `s1n_garages` in your `server.cfg` file
+
+### Keys
+
+#### I don't receive the keys when I take out a vehicle
+
+If you have a key system that isn't the default one from your framework (ESX/QBCore) you'll need to adjust the script to add compatibility with it.

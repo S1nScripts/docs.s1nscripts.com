@@ -35,7 +35,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Impound System',
-      items: ['impound/install', 'impound/config', 'impound/common-questions']
+      items: ['impound/install', 'impound/common-issues', 'impound/common-questions', 'impound/config']
     },
     {
       type: 'category',
