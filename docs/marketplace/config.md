@@ -16,8 +16,9 @@ Config.debugMode = false
 
 -- Framework settings
 Config.Framework = {
-    -- If you use ESX, you can set this to 'ESX' and it will automatically detect it otherwise set it to 'QBCore'
-    FrameworkName = 'ESX',
+    -- If you use ESX, you need to set this to 'ESX'
+    -- If you use QBCore, you need to set this to 'QBCore'
+    FrameworkName = 'QBCore',
     -- The name of the QBCore resource, this is only used if you use QBCore
     QBCoreFileName = 'qb-core',
     -- Set to true if you use the old ESX (not ESX Legacy)
