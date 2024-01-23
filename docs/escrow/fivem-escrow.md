@@ -11,7 +11,7 @@ If you encounter the following errors:
 
 - `You lack the required entitlement to use X`
 - `Failed to verify protected resource X`
-- `Error parsing script @Y in resource X: @Y: syntax error near '<\‎1>`
+- `Error parsing script @Y in resource X: @Y: syntax error near ...`
 
 Here's how you can troubleshoot each one of these errors :
 
@@ -23,6 +23,6 @@ To resolve this issue, make sure that your server's license key is owned by the 
 
 If you come across this error, it indicates that the files were damaged during the download process. This problem frequently arises while using FileZilla as it tends to corrupt the files. To prevent this issue, consider using an alternative FTP client like WinSCP.
 
-### Error parsing script @Y in resource X: @Y: syntax error near '<\‎1>'
+### Error parsing script @Y in resource X: @Y: syntax error near ...
 
 This error message indicates that the server artifacts are outdated. In order to resolve this issue, you need to update to the latest <a href="https://runtime.fivem.net/artifacts/fivem/build_server_windows/master">recommended version</a>.
