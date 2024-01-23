@@ -30,12 +30,12 @@ module.exports = {
     {
       type: 'category',
       label: 'The Garage System',
-      items: ['garage/install', 'garage/common-issues', 'garage/config']
+      items: ['garage/install', 'garage/common-issues', 'garage/common-questions', 'garage/config']
     },
     {
       type: 'category',
       label: 'The Impound System',
-      items: ['impound/install', 'impound/config']
+      items: ['impound/install', 'impound/config', 'impound/common-questions']
     },
     {
       type: 'category',
