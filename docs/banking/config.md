@@ -95,8 +95,11 @@ Config.Credit = {
     }
 }
 
+-- Configuration to access a society account
 Config.SocietyRanks = {
+    -- Job name
     ['police'] = {
+        -- Job grades
         ['boss']       = { Create = true, Login = true },
         ['lieutenant'] = { Create = false, Login = true },
         ['sergeant']   = { Create = false, Login = true }
