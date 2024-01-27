@@ -9,6 +9,10 @@ sidebar_label: Configuration
 # Marketplace
 ## Configuration
 
-### Add new image items
+### Add new images for the items
 
-To add new image items, you need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the exact same name as the item name in your database.
+You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the item name in your database or framework config file.
+
+### Add new images for the vehicles
+
+You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the vehicle model in your database.
