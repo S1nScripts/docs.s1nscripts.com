@@ -23,7 +23,44 @@ No adaptation needed.
 
 ## Adaptation to QBCore
 
-To make it work, please lead to qb-apartments/client/main.lua and look for line 447 , 452 , 455,
-replace the open ui trigger to "spawnselector:openNui"
+Good to know : The script doesn't offer the possibility to select an appartment so you'll need to use the default qb-spawn for that like the following code does.
 
-these functions should be under the calllback "apartments:client:setupSpawnUI".
+We replaced some (NOT EVERYTHING) `qb-spawn:client:openUI` to `spawnselector:openNui` to open our spawn selector.
+
+To make it work, please lead to qb-apartments/client/main.lua and look for `"apartments:client:setupSpawnUI"`.
+You need to make the adaptation of the function like this :
+
+```lua
+RegisterNetEvent('apartments:client:setupSpawnUI', function(cData, newCharacter)
+    QBCore.Functions.TriggerCallback('apartments:GetOwnedApartment', function(result)
+        if result then
+            TriggerEvent('qb-spawn:client:setupSpawns', cData, false, nil)
+            if newCharacter then
+                TriggerEvent('qb-spawn:client:openUI', true)
+            else
+                -- It shows the spawn selector UI
+                TriggerEvent('spawnselector:openNui', true)
+            end
+            TriggerEvent("apartments:client:SetHomeBlip", result.type)
+        else
+            if Apartments.Starting then
+                TriggerEvent('qb-spawn:client:setupSpawns', cData, true, Apartments.Locations)
+                if newCharacter then
+                    TriggerEvent('qb-spawn:client:openUI', true)
+                else
+                    -- It shows the spawn selector UI
+                    TriggerEvent('spawnselector:openNui', true)
+                end
+            else
+                TriggerEvent('qb-spawn:client:setupSpawns', cData, false, nil)
+                if newCharacter then
+                    TriggerEvent('qb-spawn:client:openUI', true)
+                else
+                    -- It shows the spawn selector UI
+                    TriggerEvent('spawnselector:openNui', true)
+                end
+            end
+        end
+    end, cData.citizenid)
+end)
+```
