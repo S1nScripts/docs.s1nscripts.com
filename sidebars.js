@@ -70,7 +70,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The ATM Robbery',
-      items: ['atmrobbery/install', 'atmrobbery/config']
+      items: ['atmrobbery/install', 'atmrobbery/config', 'atmrobbery/common-issues']
     },
     {
       type: 'category',
