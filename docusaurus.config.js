@@ -66,11 +66,6 @@ const config = {
         },
         items: [
           {
-            label: 'Documentation',
-            to: 'docs/intro/welcome',
-            position: 'left'
-          },
-          {
             label: 'Webstore',
             href: 'https://store.s1nscripts.com/',
             position: 'left'
