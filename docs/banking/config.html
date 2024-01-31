@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="S1nScripts" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.5ba5c59e.css">
-<script src="/assets/js/runtime~main.4d997c9c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.6bd46667.js" defer="defer"></script>
 <script src="/assets/js/main.207a165c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -34,10 +34,10 @@ Config.Framework = {
 Config.exportsScripts = {
     -- FOR QBCore ONLY
     qbManagement = &#x27;qb-management&#x27;,
+    qbTarget     = &#x27;qb-target&#x27;,
 
     -- For both ESX and QBCore
-    oxTarget     = &#x27;ox_target&#x27;,
-    qbTarget     = &#x27;qb-target&#x27;
+    oxTarget     = &#x27;ox_target&#x27;
 }
 
 -- Set to false if you don&#x27;t want to use ox-target
@@ -61,7 +61,9 @@ Config.AtmModels = { &#x27;prop_atm_02&#x27;, &#x27;prop_atm_03&#x27;, &#x27;pro
 -- List of the bank locations that will be used to open the bank menu
 Config.BankLocations = {
     {
+        -- The position of the blip and marker (where you interact)
         Position = vector3(-1212.685669, -330.764832, 37.772217),
+        -- Managing the bank blip
         Blip     = {
             Active = true,
             Sprite = 108,
@@ -69,7 +71,9 @@ Config.BankLocations = {
             Scale  = 1.0,
             Label  = &#x27;Bank&#x27;
         },
+        -- Managing the bank marker
         Marker   = {
+            -- Set to false to disable the marker
             Active         = true,
             Distance       = 5.0,
             Type           = 2,
@@ -103,9 +107,9 @@ Config.Credit = {
 
 -- Configuration to access a society account
 Config.SocietyRanks = {
-    -- Job name
+    -- Job name (Needs to be the EXACT (including uppercase, lowercase) name of the job)
     [&#x27;police&#x27;] = {
-        -- Job grades
+        -- Job grades (Needs to be the EXACT (including uppercase, lowercase) name of the job grade)
         [&#x27;boss&#x27;]       = { Create = true, Login = true },
         [&#x27;lieutenant&#x27;] = { Create = false, Login = true },
         [&#x27;sergeant&#x27;]   = { Create = false, Login = true }
