@@ -28,10 +28,10 @@ Config.Framework = {
 Config.exportsScripts = {
     -- FOR QBCore ONLY
     qbManagement = 'qb-management',
+    qbTarget     = 'qb-target',
 
     -- For both ESX and QBCore
-    oxTarget     = 'ox_target',
-    qbTarget     = 'qb-target'
+    oxTarget     = 'ox_target'
 }
 
 -- Set to false if you don't want to use ox-target
@@ -55,7 +55,9 @@ Config.AtmModels = { 'prop_atm_02', 'prop_atm_03', 'prop_fleeca_atm' }
 -- List of the bank locations that will be used to open the bank menu
 Config.BankLocations = {
     {
+        -- The position of the blip and marker (where you interact)
         Position = vector3(-1212.685669, -330.764832, 37.772217),
+        -- Managing the bank blip
         Blip     = {
             Active = true,
             Sprite = 108,
@@ -63,7 +65,9 @@ Config.BankLocations = {
             Scale  = 1.0,
             Label  = 'Bank'
         },
+        -- Managing the bank marker
         Marker   = {
+            -- Set to false to disable the marker
             Active         = true,
             Distance       = 5.0,
             Type           = 2,
@@ -97,9 +101,9 @@ Config.Credit = {
 
 -- Configuration to access a society account
 Config.SocietyRanks = {
-    -- Job name
+    -- Job name (Needs to be the EXACT (including uppercase, lowercase) name of the job)
     ['police'] = {
-        -- Job grades
+        -- Job grades (Needs to be the EXACT (including uppercase, lowercase) name of the job grade)
         ['boss']       = { Create = true, Login = true },
         ['lieutenant'] = { Create = false, Login = true },
         ['sergeant']   = { Create = false, Login = true }
