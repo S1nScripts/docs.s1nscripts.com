@@ -10,7 +10,7 @@ sidebar_label: Config
 For both QBCore and ESX :
 
 ```lua
-Config = { }
+Config = Config or { }
 
 Config.debugMode = true
 
@@ -22,12 +22,6 @@ Config.Framework = {
     ESXFileName = 'es_extended',
     SQLWrapper = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
 }
-
-if IsDuplicityVersion() then
-    -- Discord webhook URL for robbery logs
-
-    Config.DiscordWebhook = ''
-end
 
 -- If set to false, the script will use ox_target
 
