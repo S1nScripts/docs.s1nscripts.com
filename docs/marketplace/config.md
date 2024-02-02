@@ -45,9 +45,6 @@ Config.UseQbTarget = false
 -- If you use ox-target, set this to true to add support for it
 Config.UseOxTarget = false
 
--- If you want discord logging in a channel, fill in the webhook URL here
-Config.DiscordWebhook = ''
-
 -- Default values to advertise a product (minimum and maximum hours and the price per minute)
 Config.Advertisement = { Min = 1, Max = 24, Price = 1 } -- Price = price per minute
 

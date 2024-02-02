@@ -30,13 +30,6 @@ Sinyx.GarageSystem = {
     triggers = { -- Triggers names, check with yours if they are the same.
         getESX = "esx:getSharedObject"
     },
-    discord = {
-        enable = false, -- true = enable discord integration, false = disable discord integration
-        webhookURL = "",
-        username = "S1n_garages Logs",
-        color = 15844367,
-        title = "Player log"
-    },
     npcs = { -- List of NPCs
         {
             position = vector3(109.24, -636.58, 44.24), -- Position of the NPC

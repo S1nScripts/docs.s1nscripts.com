@@ -31,13 +31,6 @@ Config = {
         illeniumAppearance = "illenium-appearance",
         fivemAppearance = "fivem-appearance"
     },
-    discord = {
-        enable = false, -- true = enable discord integration, false = disable discord integration
-        webhookURL = "",
-        username = "s1n_spawnselector Logs",
-        color = 15844367,
-        title = "Player log"
-    },
     -- Show the button "Spawn to last location" if set to true
     showLastSpawn = true,
     -- Set to false ONLY if you want to show the UI multiple times with other scripts. (Recommended if you are a developer and know what you're doing)
