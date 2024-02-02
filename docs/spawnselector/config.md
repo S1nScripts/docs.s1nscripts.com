@@ -13,6 +13,8 @@ There is also a config file in `s1n_spawnselector/server/config.lua` that you ca
 For both ESX and QBCore:
 
 ```lua
+Config = Config or {}
+
 Config = {
     -- Show debug messages in the console (client / server)
     debugMode = true,
@@ -70,4 +72,11 @@ Config = {
         }
     }
 }
+
+if Config.framework.name == "qb-core" then
+    -- Used when creating a new character
+    -- Check the qb-apartments config.lua file to see the available apartments
+    Config.defaultApartment = "apartment1"
+    Config.defaultApartmentStreetName = "South Rockford Drive"
+end
 ```
