@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="S1nScripts" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.5ba5c59e.css">
-<script src="/assets/js/runtime~main.edd67088.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.653bfad6.js" defer="defer"></script>
 <script src="/assets/js/main.207a165c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,38 +26,20 @@
 <h2 id="adaptation-to-esx">Adaptation to ESX</h2>
 <p>No adaptation needed.</p>
 <h2 id="adaptation-to-qbcore">Adaptation to QBCore</h2>
-<p>Good to know : The script doesn&#x27;t offer the possibility to select an appartment so you&#x27;ll need to use the default qb-spawn for that like the following code does.</p>
-<p>We replaced some (NOT EVERYTHING) <code>qb-spawn:client:openUI</code> to <code>spawnselector:openNui</code> to open our spawn selector.</p>
+<p>Good to know : The script doesn&#x27;t offer the possibility to select an appartment so it will use the default from the config file.</p>
 <p>To make it work, please lead to qb-apartments/client/main.lua and look for <code>&quot;apartments:client:setupSpawnUI&quot;</code>.
 You need to make the adaptation of the function like this :</p>
-<pre><code class="language-lua">RegisterNetEvent(&#x27;apartments:client:setupSpawnUI&#x27;, function(cData, newCharacter)
+<pre><code class="language-lua">RegisterNetEvent(&#x27;apartments:client:setupSpawnUI&#x27;, function(cData)
     QBCore.Functions.TriggerCallback(&#x27;apartments:GetOwnedApartment&#x27;, function(result)
         if result then
-            TriggerEvent(&#x27;qb-spawn:client:setupSpawns&#x27;, cData, false, nil)
-            if newCharacter then
-                TriggerEvent(&#x27;qb-spawn:client:openUI&#x27;, true)
-            else
-                -- It shows the spawn selector UI
-                TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
-            end
+            TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
             TriggerEvent(&quot;apartments:client:SetHomeBlip&quot;, result.type)
         else
             if Apartments.Starting then
                 TriggerEvent(&#x27;qb-spawn:client:setupSpawns&#x27;, cData, true, Apartments.Locations)
-                if newCharacter then
-                    TriggerEvent(&#x27;qb-spawn:client:openUI&#x27;, true)
-                else
-                    -- It shows the spawn selector UI
-                    TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
-                end
+                TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
             else
-                TriggerEvent(&#x27;qb-spawn:client:setupSpawns&#x27;, cData, false, nil)
-                if newCharacter then
-                    TriggerEvent(&#x27;qb-spawn:client:openUI&#x27;, true)
-                else
-                    -- It shows the spawn selector UI
-                    TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
-                end
+                TriggerEvent(&#x27;spawnselector:openNui&#x27;, true)
             end
         end
     end, cData.citizenid)
