@@ -7,6 +7,8 @@ sidebar_label: Config
 # Marketplace
 ## Config file
 
+There is also a config file in `s1n_marketplace/server/config.lua` that you can modify to your liking.
+
 For both ESX and QBCore:
 ```lua
 Config = {}

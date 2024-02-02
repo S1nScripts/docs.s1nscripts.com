@@ -7,6 +7,10 @@ sidebar_label: Config
 # ATM Robbery
 ## Config file
 
+There is also a config file in `s1n_atmrobbery/server/config.lua` that you can modify to your liking.
+
+```lua
+
 For both QBCore and ESX :
 
 ```lua
