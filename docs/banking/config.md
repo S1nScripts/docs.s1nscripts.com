@@ -40,8 +40,10 @@ Config.UseOxTarget = true
 -- Set to true if you want to use qb-target
 Config.UseQBTarget = false
 
--- Add the url to your Discord webhook to receive notifications for player transactions
-Config.WebhookLink = ''
+if IsDuplicityVersion() then
+    -- Add the url to your Discord webhook to receive notifications for player transactions
+    Config.WebhookLink = ''
+end
 
 -- Set to true to enable the bank card item feature
 Config.CreditCardCheck = false
