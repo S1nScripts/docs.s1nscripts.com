@@ -23,9 +23,11 @@ Config.Framework = {
     SQLWrapper = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
 }
 
--- Discord webhook URL for robbery logs
+if IsDuplicityVersion() then
+    -- Discord webhook URL for robbery logs
 
-Config.DiscordWebhook = ''
+    Config.DiscordWebhook = ''
+end
 
 -- If set to false, the script will use ox_target
 
