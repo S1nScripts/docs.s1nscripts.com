@@ -9,6 +9,8 @@ sidebar_label: Config
 
 For both ESX and QBCore:
 ```lua
+Config = Config or {}
+
 Config = {
     -- Show debug messages in the console (client / server)
     debugMode = true,
@@ -66,14 +68,4 @@ Config = {
         }
     }
 }
-
-if IsDuplicityVersion() then
-    Config.discord = {
-        enable = false, -- true = enable discord integration, false = disable discord integration
-        webhookURL = "",
-        username = "s1n_spawnselector Logs",
-        color = 15844367,
-        title = "Player log"
-    }
-end
 ```
