@@ -7,7 +7,11 @@ sidebar_label: Config
 # Spawn Selector 
 ## Config file
 
+There is also a config file in `s1n_spawnselector/server/config.lua` that you can modify to your liking.
+
+
 For both ESX and QBCore:
+
 ```lua
 Config = {
     -- Show debug messages in the console (client / server)

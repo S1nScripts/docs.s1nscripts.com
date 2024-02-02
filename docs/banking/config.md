@@ -7,6 +7,8 @@ sidebar_label: Config
 # Banking System
 ## Config file
 
+There is also a config file in `s1n_banking/server/config.lua` that you can modify to your liking.
+
 For both QBCore and ESX :
 
 ```lua
