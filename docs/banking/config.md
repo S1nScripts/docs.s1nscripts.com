@@ -10,7 +10,7 @@ sidebar_label: Config
 For both QBCore and ESX :
 
 ```lua
-Config = { }
+Config = Config or { }
 
 -- Set to true to show debug messages in the console
 Config.debugMode = true
@@ -39,11 +39,6 @@ Config.UseOxTarget = true
 
 -- Set to true if you want to use qb-target
 Config.UseQBTarget = false
-
-if IsDuplicityVersion() then
-    -- Add the url to your Discord webhook to receive notifications for player transactions
-    Config.WebhookLink = ''
-end
 
 -- Set to true to enable the bank card item feature
 Config.CreditCardCheck = false
