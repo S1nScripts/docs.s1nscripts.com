@@ -9,29 +9,41 @@ sidebar_label: Config
 
 There is also a config file in `s1n_atmrobbery/server/config.lua` that you can modify to your liking.
 
-```lua
 
 For both QBCore and ESX :
 
 ```lua
-Config = { }
+Config = Config or { }
+
+Config.debugMode = true
 
 Config.Framework = {
-FrameworkName = 'QBCore', -- ESX or QBCore
-QBCoreFileName = 'qb-core',
-OldESX = false,
-ESXEvent = 'esx:getSharedObject',
-ESXFileName = 'es_extended',
-SQLWrapper = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
+    FrameworkName = 'QBCore', -- ESX or QBCore
+    QBCoreFileName = 'qb-core',
+    OldESX = false,
+    ESXEvent = 'esx:getSharedObject',
+    ESXFileName = 'es_extended',
+    SQLWrapper = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
 }
-
--- Discord webhook URL for robbery logs
-
-Config.DiscordWebhook = ''
 
 -- If set to false, the script will use ox_target
 
 Config.UseQBTarget = false
+
+-- If set to true, the script will use quasar_inventory
+
+Config.UseQuasarInventory = false
+
+-- If set to true, the script will use ox_inventory
+
+Config.UseOXInventory = false
+
+-- If `enable` set to true, the script will use this item name as cash (to get the money from an ATM)
+
+Config.CashItem = {
+    enable = false,
+    itemName = 'cash'
+}
 
 -- The chance of getting money from the atm, should be a number between 0 - 100
 
@@ -56,20 +68,20 @@ Config.EnableVehicleWhitelist = true
 -- All the vehicles that are whitelisted
 
 Config.WhitelistVehicles = {
-['futo'] = true
+    ['futo'] = true
 }
 
 -- All the jobs that will get the robbery notification
 
 Config.NotificationJobs = {
-['police'] = true
+    ['police'] = true
 }
 
 -- Robbery notification timeout
 
 Config.NotificationTimeout = 15000
 
--- Robbery cooldown
+-- Number of milliseconds after which the rope and atm are deleted when you finished the robbery process for an ATM.
 
 Config.AtmCooldown = 20000
 
@@ -80,4 +92,12 @@ Config.ProgressDuration = { drillfirst = 7000, drillsecond = 7000, search = 5000
 -- Robbery items
 
 Config.Items = { rope = 'rope', drill = 'drill', c4 = 'c4' }
+
+-- Distance to drill the ATM after drilling it from the wall
+
+Config.DrillAfterDistance = 20.0
+
+-- Minimum police online to start a robbery
+
+Config.MinPoliceOnline = 0
 ```
