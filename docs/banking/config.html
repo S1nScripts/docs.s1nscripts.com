@@ -9,7 +9,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="S1nScripts" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.5ba5c59e.css">
-<script src="/assets/js/runtime~main.48ec30e8.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.b57af163.js" defer="defer"></script>
 <script src="/assets/js/main.207a165c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -46,8 +46,10 @@ Config.UseOxTarget = true
 -- Set to true if you want to use qb-target
 Config.UseQBTarget = false
 
--- Add the url to your Discord webhook to receive notifications for player transactions
-Config.WebhookLink = &#x27;&#x27;
+if IsDuplicityVersion() then
+    -- Add the url to your Discord webhook to receive notifications for player transactions
+    Config.WebhookLink = &#x27;&#x27;
+end
 
 -- Set to true to enable the bank card item feature
 Config.CreditCardCheck = false
