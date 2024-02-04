@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Config
-sidebar_label: Config
+title: Exports
+sidebar_label: Exports
 ---
 
 # Banking System

@@ -75,7 +75,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Banking System',
-      items: ['banking/install', 'banking/config']
+      items: ['banking/install', 'banking/config', 'banking/exports']
     },
     {
       type: 'category',
