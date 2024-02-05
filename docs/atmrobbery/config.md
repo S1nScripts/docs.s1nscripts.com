@@ -91,6 +91,7 @@ Config.ProgressDuration = { drillfirst = 7000, drillsecond = 7000, search = 5000
 
 -- Robbery items
 
+-- IMPORTANT: if you use ox_inventory, please modify 'c4' to 'weapon_stickybomb'
 Config.Items = { rope = 'rope', drill = 'drill', c4 = 'c4' }
 
 -- Distance to drill the ATM after drilling it from the wall
