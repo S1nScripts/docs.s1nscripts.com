@@ -34,7 +34,8 @@ Config.UseQBTarget = false
 
 Config.UseQuasarInventory = false
 
--- If set to true, the script will use ox_inventory
+-- If set to true, the script will use ox_inventory,
+-- IMPORTANT: Go to Config.Items to adapt c4 item for ox_inventory
 
 Config.UseOXInventory = false
 
