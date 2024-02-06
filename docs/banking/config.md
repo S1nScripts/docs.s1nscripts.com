@@ -53,9 +53,51 @@ Config.AtmModels = { 'prop_atm_02', 'prop_atm_03', 'prop_fleeca_atm' }
 
 -- List of the bank locations that will be used to open the bank menu
 Config.BankLocations = {
+    -- First bank
     {
         -- The position of the blip and marker (where you interact)
         Position = vector3(-1212.685669, -330.764832, 37.772217),
+        -- Managing the bank blip
+        Blip     = {
+            -- Set to false to disable the blip
+            Active = true,
+            -- The sprite ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
+            Sprite = 108,
+            -- The color ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
+            Color  = 2,
+            -- The scale of the blip
+            Scale  = 1.0,
+            -- The name of the blip
+            Label  = 'Bank'
+        },
+        -- Managing the bank marker
+        Marker   = {
+            -- Set to false to disable the marker
+            Active       = true,
+            Distance     = 5.0,
+            Type         = 2,
+            Rotation     = { 0.0, 180.0, 0.0 },
+            Scale        = 0.4,
+            Color        = { R = 222, G = 186, B = 77, A = 255 },
+            BobUpAndDown = true,
+            FaceCamera   = true,
+        },
+        -- Managing the bank ped
+        Ped      = {
+            -- Set to true to show a ped
+            Active   = false,
+            -- The model of the ped (https://docs.fivem.net/docs/game-references/ped-models/)
+            Model    = 'a_m_m_indian_01',
+            -- The position of the ped
+            Position = vector3(-1212.07, -332.02, 37.78 - 1.0),
+            -- The heading of the ped
+            Heading  = 24.0
+        }
+    },
+    -- Second bank
+    {
+        -- The position of the blip and marker (where you interact)
+        Position = vector3(-1412.685669, -330.764832, 37.772217),
         -- Managing the bank blip
         Blip     = {
             -- Set to false to disable the blip
