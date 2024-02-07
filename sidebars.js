@@ -30,7 +30,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Garage System',
-      items: ['garage/install', 'garage/common-issues', 'garage/common-questions', 'garage/config']
+      items: ['garages/install', 'garages/common-issues', 'garages/common-questions', 'garages/config']
     },
     {
       type: 'category',
