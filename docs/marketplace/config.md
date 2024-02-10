@@ -11,7 +11,7 @@ There is also a config file in `s1n_marketplace/server/config.lua` that you can 
 
 For both ESX and QBCore:
 ```lua
-Config = {}
+Config = Config or {}
 
 -- Set this to true if you want to enable debug mode (for developers and support)
 Config.debugMode = false
@@ -92,9 +92,15 @@ Config.Marketplaces = {
         Location = vector3(28.96, -1018.68, 29.6),
         -- Blip settings
         Blip = {
+            -- Set to false to disable the blip
+            Enable = true,
+            -- The sprite ID of the blip (you can find the list of sprite IDs here: https://docs.fivem.net/docs/game-references/blips/)
             Sprite = 52,
+            -- The color of the blip (you can find the list of colors here: https://docs.fivem.net/docs/game-references/blips/)
             Color = 2,
+            -- The scale of the blip (1.0 is the default scale)
             Scale = 1.0,
+            -- The label of the blip
             Label = 'The Black Market'
         },
         -- Marker settings
@@ -103,6 +109,7 @@ Config.Marketplaces = {
             Rotation = { 0.0, 180.0, 0.0 },
             Scale = 0.4,
             Color = { R = 222, G = 186, B = 77, A = 255 },
+            -- Set to false to disable the marker's animation
             BobUpAndDown = true,
             FaceCamera = true,
             MarkerDistance = 5.0,
