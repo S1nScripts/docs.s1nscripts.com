@@ -73,7 +73,7 @@ const config = {
           },
           {
             label: 'Discord',
-            href: 'https://discord.gg/u9DV5CfKwn',
+            href: 'https://discord.gg/JnY9ty4z5Y',
             position: 'left'
           },
         ],
@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/u9DV5CfKwn',
+                href: 'https://discord.gg/JnY9ty4z5Y',
               },
               {
                 label: 'Tebex',
