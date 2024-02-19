@@ -45,6 +45,7 @@ Config.UseQBTarget = false
 -- Set to true to enable the bank card item feature
 Config.CreditCardCheck = false
 
+-- <!> THIS FEATURE IS STILL IN DEVELOPMENT, NOT FONCTIONNAL YET <!>
 -- CreditCardCheck needs to be set to true to use this feature
 Config.CreditCardGive = {
     -- Set to true to give the player a bank card when they create a bank account if they don't have one
