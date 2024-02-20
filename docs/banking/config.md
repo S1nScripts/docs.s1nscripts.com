@@ -45,6 +45,13 @@ Config.UseQBTarget = false
 -- Set to true to enable the bank card item feature
 Config.CreditCardCheck = false
 
+-- <!> THIS FEATURE IS STILL IN DEVELOPMENT, NOT FONCTIONNAL YET <!>
+-- CreditCardCheck needs to be set to true to use this feature
+Config.CreditCardGive = {
+    -- Set to true to give the player a bank card when they create a bank account if they don't have one
+    OnCreate = true
+}
+
 -- If CreditCardCheck is set to true, this is the name of the item that will be used to check if the player has a bank card
 Config.CreditCardItem = 'creditcard'
 
@@ -94,7 +101,7 @@ Config.BankLocations = {
             Heading  = 24.0
         }
     },
-    -- Second bank
+    -- Second bank (EXAMPLE)
     {
         -- The position of the blip and marker (where you interact)
         Position = vector3(-1412.685669, -330.764832, 37.772217),

@@ -39,6 +39,9 @@ Standalone:
 ]]
 
 Config = {
+    exportNames = {
+        s1nLib = "s1n_lib",
+    },
     notificationTypes = {
         -- Here you can setup new type of notifications.
         info = {
