@@ -26,6 +26,11 @@ Config.Framework = {
     SQLWrapper = 'oxmysql' --  oxmysql / mysql-async / ghmattimysql
 }
 
+-- If you modified the scripts names used by this script in your resources folder, you need to change them here
+Config.exportNames = {
+    s1nLib = "s1n_lib",
+}
+
 -- If set to false, the script will use ox_target
 
 Config.UseQBTarget = false
