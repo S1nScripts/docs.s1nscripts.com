@@ -11,19 +11,19 @@ sidebar_label: Installation
 
 Follow these steps to install and configure the notification system:
 
-Download this pmc-instance (fork by myself) https://github.com/s1nyx/pmc-instance/
-Go to the button "Code" > "Download ZIP"
-
-Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
-
-
-1. Drag the `pmc-instance` folder into your `resources` directory.
-2. Drag the `menuv` folder into your `resources` directory.
-3. Drag the `s1n_garages` folder into your `resources` directory.
-4. Start pmc-instance by adding `start pmc-instance` to your `server.cfg` file. 
-5. Start menuv by adding `start menuv` to your `server.cfg` file.
-6. Start the garage system by adding `start s1n_garages` to your `server.cfg` file.
-7. Configure the script by modifying the values in the `config.lua` file located in the `s1n_garages` script folder.
+1. Download this pmc-instance (fork by myself) https://github.com/s1nyx/pmc-instance/ (Go to the button "Code" > "Download ZIP")
+2. Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
+3. Download the script from KeyMaster.
+4. Download the "Library" script from KeyMaster.
+5. Drag the `pmc-instance` folder into your `resources` directory.
+6. Drag the `menuv` folder into your `resources` directory.
+7. Drag the `s1n_garages` folder into your `resources` directory.
+8. Drag the `s1n_lib` folder into your `resources` directory.
+9. Start pmc-instance by adding `start pmc-instance` to your `server.cfg` file. 
+10. Start menuv by adding `start menuv` to your `server.cfg` file.
+11. Start the library by adding `start s1n_lib` to your `server.cfg` file.
+12. Start the garage system by adding `start s1n_garages` to your `server.cfg` file.
+13. Configure the script by modifying the values in the `config.lua` file located in the `s1n_garages` script folder.
 
 ## Configuration
 

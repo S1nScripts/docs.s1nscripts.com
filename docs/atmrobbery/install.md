@@ -27,3 +27,5 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 8. (if you're using QBCore) Please add the code inside qbitems.lua to **qb-core/shared/items.lua**
 
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_atmrobbery/shared/` script folder.
+
+presentation avantage/incovenients + 1 VM qui fonctionne avec Hadoop d'installé via le distriteur sélectionné
