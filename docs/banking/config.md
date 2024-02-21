@@ -158,7 +158,7 @@ Config.Credit = {
         { Label = '2 weeks', Time = 60 * 60 * 24 * 14 },
         { Label = '1 month', Time = 60 * 60 * 24 * 30 },
         { Label = '3 months', Time = 60 * 60 * 24 * 90 }
-    }
+    },
 }
 
 -- Configuration to access a society account
