@@ -34,7 +34,12 @@ Config = {
             qbCore = "qb-core",
             -- If you use ESX, you can change the resource name here.
             esx = "es_extended",
+
         },
+    },
+
+    exportNames = {
+      s1nLib = "s1n_lib",
     },
 
     useImpoundSystem = false, -- If you use my impound system set this to true in order to avoid conflict.
