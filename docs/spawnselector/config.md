@@ -29,6 +29,10 @@ Config = {
             esx = "es_extended",
         },
     },
+    exportNames = {
+        s1nLib = "s1n_lib",
+    },
+
     supportedScripts = {
         illeniumAppearance = "illenium-appearance",
         fivemAppearance = "fivem-appearance"
