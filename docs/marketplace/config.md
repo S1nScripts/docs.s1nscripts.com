@@ -33,6 +33,10 @@ Config.Framework = {
     SQLWrapper = 'oxmysql'
 }
 
+Config.ExportNames = {
+    s1nLib = "s1n_lib",
+}
+
 -- If you use the old ESX loadout system, set this to true to support weapons
 Config.UseEsxLoadout = false
 
