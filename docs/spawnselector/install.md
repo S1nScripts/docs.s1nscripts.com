@@ -9,12 +9,16 @@ sidebar_label: Installation
 # Spawn Selector
 ## Installation
 
-Follow these steps to install and configure the spawnselector:
+Follow these steps to install and configure the Spawn Selector:
 
-1. Drag the `s1n_spawnselector-...` folder into your `resources` directory.
-2. Rename the `s1n_spawnselector-....` folder to `s1n_spawnselector`.
-3. Start the script by adding `start s1n_spawnselector` to your `server.cfg` file.
-4. Configure the script by modifying the values in the `config.lua` file located in the `s1n_spawnselector` script folder.
+1. Download the script from KeyMaster.
+2. Download the "Library" script from KeyMaster.
+3. Drag the `s1n_lib` folder into your `resources` directory.
+4. Drag the `s1n_spawnselector-...` folder into your `resources` directory.
+5. Rename the `s1n_spawnselector-....` folder to `s1n_spawnselector`.
+6. Start the library by adding `start s1n_lib` to your `server.cfg` file.
+7. Start the script by adding `start s1n_spawnselector` to your `server.cfg` file.
+8. Configure the script by modifying the values in the `config.lua` file located in the `s1n_spawnselector` script folder.
 
 
 ## Adaptation to ESX
