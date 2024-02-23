@@ -3,8 +3,6 @@ sidebar_position: 1
 title: Welcome
 sidebar_label: Welcome
 ---
-![S1nScripts Banner](https://media.discordapp.net/attachments/791405808587636806/1095223445161246810/45r-01.png?width=1439&height=399)
-
 # S1nScripts Documentation
 
 All of our paid scripts use [KeyMaster](https://keymaster.fivem.net) and the only place to purchase our scripts is on our [webstore](https://store.s1nscripts.com/).
