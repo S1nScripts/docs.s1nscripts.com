@@ -24,7 +24,12 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('rope', 'Rope', 1),
     ('c4', 'C4', 1);
 ```
-8. (if you're using QBCore) Please add the code inside qbitems.lua to **qb-core/shared/items.lua**
+8. (if you're using QBCore) Please add these items to **qb-core/shared/items.lua**
+```txt 
+['drill'] = { ['name'] = 'drill', ['label'] = 'Drill', ['weight'] = 0, ['type'] = 'item', ['image'] = 'drill.png', ['unique'] = true, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = ''},
+['rope'] = { ['name'] = 'rope', ['label'] = 'Rope', ['weight'] = 0, ['type'] = 'item', ['image'] = 'rope.png', ['unique'] = true, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = ''},
+['c4'] = { ['name'] = 'c4', ['label'] = 'C4', ['weight'] = 0, ['type'] = 'item', ['image'] = 'c4.png', ['unique'] = true, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = ''},
+```
 
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_atmrobbery/shared/` script folder.
 
