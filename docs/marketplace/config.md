@@ -76,6 +76,9 @@ Config.BlackMarketUseDirtyMoney = false
 -- ONLY FOR QBCORE: Define the name of the dirty money item
 Config.BlackMarketDirtyMoneyItem = 'markedbills'
 
+-- FOR DEVELOPERS ONLY: Set to true if you want to be able to buy your own products
+Config.CanBuyOwnProduct = false
+
 -- List of the marketplaces
 Config.Marketplaces = {
     {
