@@ -33,7 +33,10 @@ Config.exportsScripts = {
     qbTarget     = 'qb-target',
 
     -- For both ESX and QBCore
-    oxTarget     = 'ox_target'
+    oxTarget     = 'ox_target',
+
+    -- Dependencies
+    s1nLib       = "s1n_lib"
 }
 
 -- Set to false if you don't want to use ox-target
