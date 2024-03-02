@@ -13,10 +13,12 @@ Follow these steps to install and configure the notification system:
 1. Download the script from KeyMaster.
 2. Download the "Library" script from KeyMaster.
 3. Drag the `s1n_notify` folder into your `resources` directory.
-4. Drag the `s1n_lib` folder into your `resources` directory.
-5. Start the library by adding `start s1n_lib` to your `server.cfg` file.
-6. Start the notification system by adding `start s1n_notify` to your `server.cfg` file.
-7. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
+4. Rename the `s1n_notify-....` folder to `s1n_notify`.
+5. Drag the `s1n_lib` folder into your `resources` directory.
+6. Rename the `s1n_lib-....` folder to `s1n_lib`.
+7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
+8. Start the notification system by adding `start s1n_notify` to your `server.cfg` file.
+9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
 
 
 That's it! 
