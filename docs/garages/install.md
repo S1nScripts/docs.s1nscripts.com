@@ -18,12 +18,14 @@ Follow these steps to install and configure the notification system:
 5. Drag the `pmc-instance` folder into your `resources` directory.
 6. Drag the `menuv` folder into your `resources` directory.
 7. Drag the `s1n_garages` folder into your `resources` directory.
-8. Drag the `s1n_lib` folder into your `resources` directory.
-9. Start pmc-instance by adding `start pmc-instance` to your `server.cfg` file. 
-10. Start menuv by adding `start menuv` to your `server.cfg` file.
-11. Start the library by adding `start s1n_lib` to your `server.cfg` file.
-12. Start the garage system by adding `start s1n_garages` to your `server.cfg` file.
-13. Configure the script by modifying the values in the `config.lua` file located in the `s1n_garages` script folder.
+8. Rename the `s1n_garages-....` folder to `s1n_garages`.
+9. Drag the `s1n_lib` folder into your `resources` directory.
+10. Rename the `s1n_lib-....` folder to `s1n_lib`.
+11. Start pmc-instance by adding `start pmc-instance` to your `server.cfg` file. 
+12. Start menuv by adding `start menuv` to your `server.cfg` file.
+13. Start the library by adding `start s1n_lib` to your `server.cfg` file.
+14. Start the garage system by adding `start s1n_garages` to your `server.cfg` file.
+15. Configure the script by modifying the values in the `config.lua` file located in the `s1n_garages` script folder.
 
 ## Configuration
 
