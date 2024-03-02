@@ -126,6 +126,8 @@ Config.Marketplaces = {
         DisableVehicles = false,
         -- If you want to disable the possibility to see the seller name, set this to false otherwise set it to true
         ShowSellerName = true,
+        -- Set to "bank" to use the bank account for the transactions, set to "cash" to use the cash for the transactions
+        PaymentMethod = "bank",
     }
 }
 ```
