@@ -12,7 +12,15 @@ Compatibility: QBCore (with qb-vehiclekeys), ESX
 
 ## Installation
 
-Follow these steps to install and configure the notification system:
+:::warning
+
+We highly recommend you to read carefully each step written below.
+
+**Don't skip any step, it could lead to a non-functioning script.**
+
+:::
+
+### Follow these steps to install the script
 
 1. Drag the `s1n_carrental` folder into your `resources` directory.
 2. Start the rental system by adding `start s1n_carrental` to your `server.cfg` file.

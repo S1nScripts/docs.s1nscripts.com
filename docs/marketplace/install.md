@@ -9,7 +9,15 @@ sidebar_label: Installation
 # Marketplace 
 ## Installation
 
-Follow these steps to install and configure the marketplace:
+:::warning
+
+We highly recommend you to read carefully each step written below.
+
+**Don't skip any step, it could lead to a non-functioning script.**
+
+:::
+
+### Follow these steps to install the script
 
 1. Download the script from KeyMaster.
 2. Download the "Library" script from KeyMaster.

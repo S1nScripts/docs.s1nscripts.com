@@ -6,9 +6,18 @@ sidebar_label: Installation
 
 ![S1nScripts Logo](https://forum.cfx.re/uploads/default/original/4X/7/1/8/718c6f28a9b5ab0dc33bf79288bcb418e7684326.jpeg)
 
-# Notification System Installation
+# Notification System 
+## Installation
 
-Follow these steps to install and configure the notification system:
+:::warning
+
+We highly recommend you to read carefully each step written below.
+
+**Don't skip any step, it could lead to a non-functioning script.**
+
+:::
+
+### Follow these steps to install the script
 
 1. Download the script from KeyMaster.
 2. Download the "Library" script from KeyMaster.
