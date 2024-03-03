@@ -1,11 +1,10 @@
 ---
 sidebar_position: 0
-title: FiveM Assets Escrow
-sidebar_label: FiveM Assets Escrow
+title: Common issues
+sidebar_label: Common issues
 ---
-![S1nScripts Banner](https://media.discordapp.net/attachments/791405808587636806/1095223445161246810/45r-01.png?width=1439&height=399)
 
-## FiveM Asset Escrow Errors
+## Issues
 
 If you encounter the following errors:
 
@@ -13,7 +12,9 @@ If you encounter the following errors:
 - `Failed to verify protected resource X`
 - `Error parsing script @Y in resource X: @Y: syntax error near ...`
 
-Here's how you can troubleshoot each one of these errors :
+You can find the solutions below.
+
+## Solutions for each error
 
 ### You lack the required entitlement to use X
 
@@ -25,7 +26,7 @@ If you come across this error, it indicates that the files were damaged during t
 
 ### Error parsing script @Y in resource X: @Y: syntax error near ...
 
-This error message indicates that the server artifacts are outdated. In order to resolve this issue, you need to update to the latest <a href="https://runtime.fivem.net/artifacts/fivem/build_server_windows/master">recommended version</a>.
+This error message indicates that the server artifacts are outdated. In order to resolve this issue, you need to update to the **latest recommended version** for your operating system (Linux or Windows).
 
 ### My script doesn't work and there is no errors in the F8 logs and server console
 
