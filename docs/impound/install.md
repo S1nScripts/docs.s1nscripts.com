@@ -9,7 +9,15 @@ sidebar_label: Installation
 # Impound System 
 ## Installation
 
-Follow these steps to install and configure the impound system:
+:::warning
+
+We highly recommend you to read carefully each step written below.
+
+**Don't skip any step, it could lead to a non-functioning script.**
+
+:::
+
+### Follow these steps to install the script
 
 Download menuv https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
 

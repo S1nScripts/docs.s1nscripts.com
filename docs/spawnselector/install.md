@@ -9,7 +9,15 @@ sidebar_label: Installation
 # Spawn Selector
 ## Installation
 
-Follow these steps to install and configure the Spawn Selector:
+:::warning
+
+We highly recommend you to read carefully each step written below.
+
+**Don't skip any step, it could lead to a non-functioning script.**
+
+:::
+
+### Follow these steps to install the script
 
 1. Download the script from KeyMaster.
 2. Download the "Library" script from KeyMaster.
@@ -20,6 +28,7 @@ Follow these steps to install and configure the Spawn Selector:
 7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the script by adding `start s1n_spawnselector` to your `server.cfg` file.
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_spawnselector` script folder.
+10. If you use QBCore, please follow the [Adaptation to QBCore](#adaptation-to-qbcore) section.
 
 
 ## Adaptation to ESX
