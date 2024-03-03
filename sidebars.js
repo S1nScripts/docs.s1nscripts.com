@@ -65,7 +65,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Marketplace',
-      items: ['marketplace/install', 'marketplace/configuration', 'marketplace/config']
+      items: ['marketplace/install', 'marketplace/config']
     },
     {
       type: 'category',
@@ -75,7 +75,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Banking System',
-      items: ['banking/install', 'banking/config', 'banking/exports']
+      items: ['banking/install', 'banking/config', 'banking/exports', 'banking/common-issues']
     },
     {
       type: 'category',

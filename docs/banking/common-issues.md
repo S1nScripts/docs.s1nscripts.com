@@ -4,7 +4,7 @@ title: Common issues
 sidebar_label: Common issues
 ---
 
-# ATM Robbery
+# Banking
 ## Common issues
 
 ### Issues

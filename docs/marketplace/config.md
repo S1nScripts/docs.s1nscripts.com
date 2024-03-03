@@ -5,6 +5,17 @@ sidebar_label: Config
 ---
 
 # Marketplace
+
+## Adding images to the marketplace
+
+### Adding new images for the items
+
+You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the item name in your database or framework config file.
+
+### Adding new images for the vehicles
+
+You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the vehicle model in your database.
+
 ## Config file
 
 There is also a config file in `s1n_marketplace/server/config.lua` that you can modify to your liking.
