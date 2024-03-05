@@ -46,6 +46,8 @@ Config.Framework = {
 
 Config.ExportNames = {
     s1nLib = "s1n_lib",
+
+    oxInventory = "ox_inventory",
 }
 
 -- If you use the old ESX loadout system, set this to true to support weapons
