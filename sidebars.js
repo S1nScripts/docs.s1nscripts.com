@@ -79,6 +79,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Government System',
+      items: ['government/install', 'government/config']
+    },
+    {
+      type: 'category',
       label: 'The NPC Placer',
       items: ['npcplacer/config']
     },
