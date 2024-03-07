@@ -44,7 +44,7 @@ Config.Framework = {
 -- Scripts names for the exports
 Config.ExportNames = {
     s1nLib = "s1n_lib",
-
+    
     oxTarget = "ox_target",
     qbTarget = "qb-target"
 }
@@ -77,14 +77,13 @@ Config.Peds = {
     -- ["TaxationSystem"] = true,
     -- ["AppointmentSystem"] = true,
     -- ["EnterpriseManagement"] = true,
-    -- ["TaxManagement"] = true,
     -- ["AnnouncementSystem"] = true,
     -- ["DefconManagement"] = true,
     -- ["FundsSystem"] = true,
     -- ["AppointmentSystemNormal"] = true,
     -- ["VotingSystem"] = true,
 
-    ["government_official_1"] = {
+    {
         -- Set this to true if you want to make this ped only available to the government job
         jobOnly = true,
         -- The model of the ped
@@ -96,13 +95,12 @@ Config.Peds = {
             ["TaxationSystem"] = true,
             ["AppointmentSystem"] = true,
             ["EnterpriseManagement"] = true,
-            ["TaxManagement"] = true,
             ["AnnouncementSystem"] = true,
             ["DefconManagement"] = true,
             ["FundsSystem"] = true
         }
     },
-    ["government_official_2"] = {
+    {
         -- Set this to true if you want to make this ped only available to the government job
         jobOnly = false,
         -- The model of the ped
@@ -114,7 +112,7 @@ Config.Peds = {
             ["AppointmentSystemNormal"] = true,
         }
     },
-    ["government_official_3"] = {
+    {
         -- Set this to true if you want to make this ped only available to the government job
         jobOnly = false,
         -- The model of the ped
@@ -142,7 +140,6 @@ Config.Grades = {
             ["TaxationSystem"] = true,
             ["AppointmentSystem"] = true,
             ["EnterpriseManagement"] = true,
-            ["TaxManagement"] = true,
             ["AnnouncementSystem"] = true,
             ["DefconManagement"] = true,
             ["FundsSystem"] = true,
@@ -167,7 +164,6 @@ Config.Grades = {
         -- The features that the grade has access to
         access = {
             ["TaxationSystem"] = true,
-            ["TaxManagement"] = true,
             ["FundsSystem"] = true,
         },
         -- The salary of the grade
@@ -189,10 +185,22 @@ Config.Voting = {
     -- Set this to true if you want to enable the automatic voting system
     enabled = true,
 
+    -- If set this to true, people already in the government job can't present themselves
+    alreadyGov = false,
+
     -- The durations of the voting system for each stage
     durations = {
-        ["1"] = { present = 10, voting = 10, draw = false },
-        ["2"] = { present = 10, voting = 10, draw = false },
+
+        ["1"] = {
+            present = 10,
+            voting = 10,
+            draw = false
+        },
+        ["2"] = {
+            present = 10,
+            voting = 10,
+            draw = false
+        },
         ["3"] = { present = 10, voting = 10, draw = false },
         ["4"] = { present = 10, voting = 10, draw = false }
     }
