@@ -179,12 +179,13 @@ Config.Grades = {
 
 -- Settings for the automatic voting system
 -- The automatic voting system is a system that allows players to vote for a candidate.
+-- <!> This system doesn't persist between script/server restarts. If this feature is already planned, it will be added in a future update.
 Config.Voting = {
     -- Set this to true if you want to enable the automatic voting system
     enabled = true,
 
-    -- If set this to true, people already in the government job can't present themselves
-    alreadyGov = false,
+    -- If set this to false, people already in the government job can't present themselves
+    presentEvenIfHasGovernmentJob = true,
 
     -- The durations of the voting system for each grade ID from Config.Grades
     durations = {
