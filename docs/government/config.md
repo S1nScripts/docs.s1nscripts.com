@@ -127,11 +127,9 @@ Config.Peds = {
 }
 
 -- These are the grades that you can use in the government job
+-- They will be automatically added to the database, no need to add them manually
 -- You can add as many grades as you want
 Config.Grades = {
-    -- Example:
-    -- TODO: Add an example
-
     ["1"] = {
         -- The name of the grade
         name = "Governor",
@@ -188,21 +186,44 @@ Config.Voting = {
     -- If set this to true, people already in the government job can't present themselves
     alreadyGov = false,
 
-    -- The durations of the voting system for each stage
+    -- The durations of the voting system for each grade ID from Config.Grades
     durations = {
-
+        -- The ID of the grade from Config.Grades
         ["1"] = {
+            -- Sets the time duration for presenting oneself as the rank associated with the ID
             present = 10,
+            -- Sets the time duration for voting for the rank associated with the ID
             voting = 10,
+            -- Set this to true if you want to enable the draw system (meaning that if there is a draw, the voting will be extended)
             draw = false
         },
+        -- The ID of the grade from Config.Grades
         ["2"] = {
+            -- Sets the time duration for presenting oneself as the rank associated with the ID
             present = 10,
+            -- Sets the time duration for voting for the rank associated with the ID
             voting = 10,
+            -- Set this to true if you want to enable the draw system (meaning that if there is a draw, the voting will be extended)
             draw = false
         },
-        ["3"] = { present = 10, voting = 10, draw = false },
-        ["4"] = { present = 10, voting = 10, draw = false }
+        -- The ID of the grade from Config.Grades
+        ["3"] = {
+            -- Sets the time duration for presenting oneself as the rank associated with the ID
+            present = 10,
+            -- Sets the time duration for voting for the rank associated with the ID
+            voting = 10,
+            -- Set this to true if you want to enable the draw system (meaning that if there is a draw, the voting will be extended)
+            draw = false
+        },
+        -- The ID of the grade from Config.Grades
+        ["4"] = {
+            -- Sets the time duration for presenting oneself as the rank associated with the ID
+            present = 10,
+            -- Sets the time duration for voting for the rank associated with the ID
+            voting = 10,
+            -- Set this to true if you want to enable the draw system (meaning that if there is a draw, the voting will be extended)
+            draw = false
+        }
     }
 }
 ```
