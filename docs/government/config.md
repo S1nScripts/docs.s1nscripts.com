@@ -182,7 +182,7 @@ Config.Grades = {
 -- <!> This system doesn't persist between script/server restarts. If this feature is already planned, it will be added in a future update.
 Config.Voting = {
     -- Set this to true if you want to enable the automatic voting system
-    enabled = true,
+    enabled = false,
 
     -- If set this to false, people already in the government job can't present themselves
     presentEvenIfHasGovernmentJob = true,
