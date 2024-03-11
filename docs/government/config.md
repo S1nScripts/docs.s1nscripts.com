@@ -46,7 +46,8 @@ Config.ExportNames = {
     s1nLib = "s1n_lib",
     
     oxTarget = "ox_target",
-    qbTarget = "qb-target"
+    qbTarget = "qb-target",
+    qbBanking = "qb-banking",
 }
 
 -- Dependencies settings
