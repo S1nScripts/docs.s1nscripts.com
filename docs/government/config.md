@@ -53,9 +53,22 @@ Config.ExportNames = {
 -- Dependencies settings
 Config.Dependencies = {
     -- You need to set to true which target script you are using
-
     oxTarget = true,
     qbTarget = false
+
+    -- You need to set to true if you use qb-management (for handling the accounts money)
+    qbManagement = true,
+}
+
+-- Events names used (ONLY change it if you know what you are doing)
+Config.Events = {
+    qbManagement = {
+        removeAccountMoney = "qb-bossmenu:server:removeAccountMoney"
+    },
+
+    esxAddonAccount = {
+        getSharedAccount = "esx_addonaccount:getSharedAccount"
+    },
 }
 
 -- Set the interval in minutes to check for business tax due and remove it from the society account
