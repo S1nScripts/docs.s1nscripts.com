@@ -54,7 +54,7 @@ Config.ExportNames = {
 Config.Dependencies = {
     -- You need to set to true which target script you are using
     oxTarget = true,
-    qbTarget = false
+    qbTarget = false,
 
     -- You need to set to true if you use qb-management (for handling the accounts money)
     qbManagement = true,
