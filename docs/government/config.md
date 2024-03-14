@@ -48,6 +48,7 @@ Config.ExportNames = {
     oxTarget = "ox_target",
     qbTarget = "qb-target",
     qbBanking = "qb-banking",
+    qbManagement = "qb-management",
 }
 
 -- Dependencies settings
