@@ -25,7 +25,7 @@ For both ESX and QBCore:
 Config = Config or {}
 
 -- Set this to true if you want to enable debug mode (for developers and support)
-Config.debugMode = false
+Config.debugMode = true
 
 -- Framework settings
 Config.Framework = {
