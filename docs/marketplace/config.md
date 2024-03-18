@@ -90,7 +90,7 @@ Config.BlackMarketUseDirtyMoney = false
 Config.BlackMarketDirtyMoneyItem = 'markedbills'
 
 -- FOR DEVELOPERS ONLY: Set to true if you want to be able to buy your own products
-Config.CanBuyOwnProduct = false
+Config.CanBuyOwnProduct = true
 
 -- List of the marketplaces
 Config.Marketplaces = {
