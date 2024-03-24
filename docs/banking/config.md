@@ -174,4 +174,7 @@ Config.SocietyRanks = {
         ['sergeant']   = { Create = false, Login = true }
     }
 }
+
+-- IBAN prefix added to the IBAN when creating a new account
+Config.IbanPrefix = "US0"
 ```
