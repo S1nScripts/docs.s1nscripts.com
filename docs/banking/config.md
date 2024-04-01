@@ -177,4 +177,9 @@ Config.SocietyRanks = {
 
 -- IBAN prefix added to the IBAN when creating a new account
 Config.IbanPrefix = "US0"
+
+Config.Timeouts = {
+    -- The time in milliseconds after which the player won't be able to accept a shared account invite sent by another player
+    AcceptSharedAccountInvite = 2 * 60 * 1000
+}
 ```
