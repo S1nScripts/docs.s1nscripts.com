@@ -46,14 +46,14 @@ You need to make the adaptation of the function like this :
 RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
     QBCore.Functions.TriggerCallback('apartments:GetOwnedApartment', function(result)
         if result then
-            TriggerEvent('spawnselector:openNui', true)
+            TriggerEvent('s1n_spawnselector:openUI', true)
             TriggerEvent("apartments:client:SetHomeBlip", result.type)
         else
             if Apartments.Starting then
                 TriggerEvent('qb-spawn:client:setupSpawns', cData, true, Apartments.Locations)
-                TriggerEvent('spawnselector:openNui', true)
+                TriggerEvent('s1n_spawnselector:openUI', true)
             else
-                TriggerEvent('spawnselector:openNui', true)
+                TriggerEvent('s1n_spawnselector:openUI', true)
             end
         end
     end, cData.citizenid)
