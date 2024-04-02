@@ -24,6 +24,7 @@ Config = {
         name = "qb-core",
         triggers = {
             esxSharedObject = "esx:getSharedObject",
+            esxPlayerLoaded = "esx:playerLoaded",
         },
         resourceNames = {
             qbCore = "qb-core",
@@ -46,10 +47,15 @@ Config = {
     -- Every spawn locations
     spawns = {
         [1] = {
+            -- The name of the location
             locationName = "North Motel",
+            -- The image link (optional)
             --imageLink = "",
+            -- The image file name if you want to use a local image (put images in web/assets/ folder)
             imageFileName = "1.png",
+            -- The location of the spawn
             location = vector3(-85.97, 6325.62, 31.49),
+            -- The player heading when spawning
             heading = 359.14
         },
         [2] = {
