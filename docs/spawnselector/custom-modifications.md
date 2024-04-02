@@ -16,3 +16,11 @@ You'll need to first install the dependencies with `npm install` in the folder t
 To start the project, run `npm start` in this same folder.
 
 To build the project, run `npm run build` in this same folder.
+
+## Opening the Spawn Selector UI from another script
+
+You can open the spawn selector UI from another script by using the following code:
+
+```lua
+TriggerEvent('s1n_spawnselector:openUI')
+```
