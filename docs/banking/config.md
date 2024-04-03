@@ -27,7 +27,7 @@ Config.Framework = {
 }
 
 -- You need to verify that the following scripts are exactly named like this or change the names here
-Config.exportsScripts = {
+Config.ExportNames = {
     -- FOR QBCore ONLY
     qbManagement = 'qb-management',
     qbTarget     = 'qb-target',
