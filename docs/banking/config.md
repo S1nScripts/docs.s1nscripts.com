@@ -168,8 +168,10 @@ Config.Credit = {
 Config.SocietyRanks = {
     -- Job name (Needs to be the EXACT (including uppercase, lowercase) name of the job)
     ['police'] = {
-        -- Job grades (Needs to be the EXACT (including uppercase, lowercase) name of the job grade)
-        ['boss']       = { Create = true, Login = true },
+        -- Job grades (Needs to be the EXACT name of the job grade)
+        -- Create: Set to true to allow the player to create a society account
+        -- Login: Set to true to allow the player to access the society account (if the account is already created)
+        ['chief']      = { Create = true, Login = true },
         ['lieutenant'] = { Create = false, Login = true },
         ['sergeant']   = { Create = false, Login = true }
     }
