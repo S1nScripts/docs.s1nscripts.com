@@ -65,7 +65,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Marketplace',
-      items: ['marketplace/install', 'marketplace/config']
+      items: ['marketplace/install', 'marketplace/config', 'marketplace/common-issues']
     },
     {
       type: 'category',
