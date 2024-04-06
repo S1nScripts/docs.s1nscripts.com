@@ -21,19 +21,19 @@ Config.Framework = {
     FrameworkName  = 'QBCore', -- Choose your framework: ESX or QBCore
     QBCoreFileName = 'qb-core', -- The name of the QBCore resource
     OldESX         = false, -- Set to true if you're using an older version of ESX which still uses the ESX event esx:getSharedObject
-    ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event
+    ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event (if you're using an older version of ESX)
     ESXFileName    = 'es_extended', -- The name of the ESX resource
-    SQLWrapper     = 'oxmysql' --  oxmysql (HIGHLY RECOMMANDED) / mysql-async (deprecated) / ghmattimysql (deprecated)
+    SQLWrapper     = 'oxmysql'
 }
 
 -- You need to verify that the following scripts are exactly named like this or change the names here
 Config.ExportNames = {
     -- FOR QBCore ONLY
-    qbManagement = 'qb-management',
-    qbTarget     = 'qb-target',
+    qbManagement = "qb-management",
+    qbTarget     = "qb-target",
 
     -- For both ESX and QBCore
-    oxTarget     = 'ox_target',
+    oxTarget     = "ox_target",
 
     -- Dependencies
     s1nLib       = "s1n_lib"
@@ -56,7 +56,7 @@ Config.CreditCardGive = {
 }
 
 -- If CreditCardCheck is set to true, this is the name of the item that will be used to check if the player has a bank card
-Config.CreditCardItem = 'creditcard'
+Config.CreditCardItem = "creditcard"
 
 -- List of the ATM models that will be used to open the bank menu
 Config.AtmModels = { 'prop_atm_02', 'prop_atm_03', 'prop_fleeca_atm' }
