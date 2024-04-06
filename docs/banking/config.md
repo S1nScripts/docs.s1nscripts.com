@@ -46,7 +46,7 @@ Config.Keys = {
         -- Refer to the first comment to see the list of all the available keys
         Key         = 'E',
         -- Distance from the location position (if it's a bank) otherwise from the ATM position
-        UseDistance = 5.0
+        UseDistance = 1.0
     }
 }
 
@@ -97,7 +97,7 @@ Config.BankLocations = {
         Marker   = {
             -- Set to false to disable the marker
             Active       = true,
-            Distance     = 5.0,
+            Distance     = 1.0,
             Type         = 2,
             Rotation     = { 0.0, 180.0, 0.0 },
             Scale        = 0.4,
@@ -140,7 +140,7 @@ Config.BankLocations = {
         Marker   = {
             -- Set to false to disable the marker
             Active       = true,
-            Distance     = 5.0,
+            Distance     = 1.0,
             Type         = 2,
             Rotation     = { 0.0, 180.0, 0.0 },
             Scale        = 0.4,
