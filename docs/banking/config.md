@@ -70,15 +70,17 @@ Config.BankLocations = {
         -- Managing the bank blip
         Blip     = {
             -- Set to false to disable the blip
-            Active = true,
+            Active     = true,
             -- The sprite ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Sprite = 108,
+            Sprite     = 108,
             -- The color ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Color  = 2,
+            Color      = 2,
             -- The scale of the blip
-            Scale  = 1.0,
+            Scale      = 1.0,
             -- The name of the blip
-            Label  = 'Bank'
+            Label      = 'Bank',
+            -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
+            ShortRange = true
         },
         -- Managing the bank marker
         Marker   = {
@@ -111,15 +113,17 @@ Config.BankLocations = {
         -- Managing the bank blip
         Blip     = {
             -- Set to false to disable the blip
-            Active = true,
+            Active     = true,
             -- The sprite ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Sprite = 108,
+            Sprite     = 108,
             -- The color ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Color  = 2,
+            Color      = 2,
             -- The scale of the blip
-            Scale  = 1.0,
+            Scale      = 1.0,
             -- The name of the blip
-            Label  = 'Bank'
+            Label      = 'Bank',
+            -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
+            ShortRange = true
         },
         -- Managing the bank marker
         Marker   = {
