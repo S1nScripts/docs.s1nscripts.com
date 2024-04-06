@@ -39,8 +39,19 @@ Config.ExportNames = {
     s1nLib       = "s1n_lib"
 }
 
+-- List of all the available keys : https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+Config.Keys = {
+    -- If you're not using a target script, you can set the key to open the bank menu here
+    OpenUI = {
+        -- Refer to the first comment to see the list of all the available keys
+        Key         = 'E',
+        -- Distance from the location position (if it's a bank) otherwise from the ATM position
+        UseDistance = 5.0
+    }
+}
+
 -- Set to false if you don't want to use ox-target
-Config.UseOxTarget = true
+Config.UseOxTarget = false
 
 -- Set to true if you want to use qb-target
 Config.UseQBTarget = false
