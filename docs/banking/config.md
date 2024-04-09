@@ -21,26 +21,37 @@ Config.Framework = {
     FrameworkName  = 'QBCore', -- Choose your framework: ESX or QBCore
     QBCoreFileName = 'qb-core', -- The name of the QBCore resource
     OldESX         = false, -- Set to true if you're using an older version of ESX which still uses the ESX event esx:getSharedObject
-    ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event
+    ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event (if you're using an older version of ESX)
     ESXFileName    = 'es_extended', -- The name of the ESX resource
-    SQLWrapper     = 'oxmysql' --  oxmysql (HIGHLY RECOMMANDED) / mysql-async (deprecated) / ghmattimysql (deprecated)
+    SQLWrapper     = 'oxmysql'
 }
 
 -- You need to verify that the following scripts are exactly named like this or change the names here
 Config.ExportNames = {
     -- FOR QBCore ONLY
-    qbManagement = 'qb-management',
-    qbTarget     = 'qb-target',
+    qbManagement = "qb-management",
+    qbTarget     = "qb-target",
 
     -- For both ESX and QBCore
-    oxTarget     = 'ox_target',
+    oxTarget     = "ox_target",
 
     -- Dependencies
     s1nLib       = "s1n_lib"
 }
 
+-- List of all the available keys : https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+Config.Keys = {
+    -- If you're not using a target script, you can set the key to open the bank menu here
+    OpenUI = {
+        -- Refer to the first comment to see the list of all the available keys
+        Key         = 'E',
+        -- Distance from the location position (if it's a bank) otherwise from the ATM position
+        UseDistance = 1.0
+    }
+}
+
 -- Set to false if you don't want to use ox-target
-Config.UseOxTarget = true
+Config.UseOxTarget = false
 
 -- Set to true if you want to use qb-target
 Config.UseQBTarget = false
@@ -56,7 +67,7 @@ Config.CreditCardGive = {
 }
 
 -- If CreditCardCheck is set to true, this is the name of the item that will be used to check if the player has a bank card
-Config.CreditCardItem = 'creditcard'
+Config.CreditCardItem = "creditcard"
 
 -- List of the ATM models that will be used to open the bank menu
 Config.AtmModels = { 'prop_atm_02', 'prop_atm_03', 'prop_fleeca_atm' }
@@ -70,21 +81,23 @@ Config.BankLocations = {
         -- Managing the bank blip
         Blip     = {
             -- Set to false to disable the blip
-            Active = true,
+            Active     = true,
             -- The sprite ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Sprite = 108,
+            Sprite     = 108,
             -- The color ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Color  = 2,
+            Color      = 2,
             -- The scale of the blip
-            Scale  = 1.0,
+            Scale      = 1.0,
             -- The name of the blip
-            Label  = 'Bank'
+            Label      = 'Bank',
+            -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
+            ShortRange = true
         },
         -- Managing the bank marker
         Marker   = {
             -- Set to false to disable the marker
             Active       = true,
-            Distance     = 5.0,
+            Distance     = 1.0,
             Type         = 2,
             Rotation     = { 0.0, 180.0, 0.0 },
             Scale        = 0.4,
@@ -111,21 +124,23 @@ Config.BankLocations = {
         -- Managing the bank blip
         Blip     = {
             -- Set to false to disable the blip
-            Active = true,
+            Active     = true,
             -- The sprite ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Sprite = 108,
+            Sprite     = 108,
             -- The color ID of the blip (https://docs.fivem.net/docs/game-references/blips/)
-            Color  = 2,
+            Color      = 2,
             -- The scale of the blip
-            Scale  = 1.0,
+            Scale      = 1.0,
             -- The name of the blip
-            Label  = 'Bank'
+            Label      = 'Bank',
+            -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
+            ShortRange = true
         },
         -- Managing the bank marker
         Marker   = {
             -- Set to false to disable the marker
             Active       = true,
-            Distance     = 5.0,
+            Distance     = 1.0,
             Type         = 2,
             Rotation     = { 0.0, 180.0, 0.0 },
             Scale        = 0.4,
@@ -184,4 +199,7 @@ Config.Timeouts = {
     -- The time in milliseconds after which the player won't be able to accept a shared account invite sent by another player
     AcceptSharedAccountInvite = 2 * 60 * 1000
 }
+
+-- The maximum amount that can be deposited, transfered or withdrawn in a single transaction
+Config.MaxAmountPerTransaction = 10000000
 ```
