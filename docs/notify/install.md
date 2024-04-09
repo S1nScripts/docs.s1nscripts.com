@@ -27,7 +27,8 @@ We highly recommend you to read carefully each step written below.
 6. Rename the `s1n_lib-....` folder to `s1n_lib`.
 7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the notification system by adding `start s1n_notify` to your `server.cfg` file.
-9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
+9. There is no sounds included by default. You need to add your own sounds to the `s1n_notify/web/build/static/media` folder (create the folder if not existing). You can find some sounds [here](https://pixabay.com/sound-effects/search/notification/).
+10. Configure the script by modifying the values in the `config.lua` file located in the `s1n_notify` script folder.
 
 
 That's it! 
