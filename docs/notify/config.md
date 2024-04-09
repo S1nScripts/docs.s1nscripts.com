@@ -10,13 +10,15 @@ sidebar_label: Config
 Standalone:
 ```lua
 --[[
-    Need help with the script ? Go into the support Discord https://discord.gg/aKF3DX8yPx
+    Need help with the script ? Go into the support discord server (link on https://docs.s1nscripts.com)
     A verification that you bought the script will be necessary.
 
     IMPORTANT:
 
     Default themes: white, colorful
     List of available position: top, top-right, top-left, bottom, bottom-right, bottom-left
+
+    If you want to add sounds, you need to put the sound file in the web/build/static/media folder. If no media/ folder, create it. (You can download notification sounds here: https://pixabay.com/sound-effects/search/notification/)
 
     USAGE:
 
@@ -48,7 +50,7 @@ Config = {
             icon = "MdInfo",
             color = "#4666D7",
             sound = {
-                enable = true,
+                enable = false,
                 source = "popup.mp3",
                 volume = 0.75
             }
@@ -57,7 +59,7 @@ Config = {
             icon = "MdWarning",
             color = "#E7A526",
             sound = {
-                enable = true,
+                enable = false,
                 source = "popup.mp3",
                 volume = 0.5
             }
@@ -66,7 +68,7 @@ Config = {
             icon = "MdCheckCircle",
             color = "#49AF72",
             sound = {
-                enable = true,
+                enable = false,
                 source = "pop.wav",
                 volume = 0.2
             }
@@ -75,7 +77,7 @@ Config = {
             icon = "MdError",
             color = "#D74646",
             sound = {
-                enable = true,
+                enable = false,
                 source = "pop.wav",
                 volume = 1
             }
@@ -84,7 +86,7 @@ Config = {
             icon = "MdMessage",
             color = "#676767",
             sound = {
-                enable = true,
+                enable = false,
                 source = "pop.wav",
                 volume = 1
             }
