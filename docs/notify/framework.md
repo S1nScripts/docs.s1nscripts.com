@@ -23,20 +23,20 @@ end
 ```
 Replace it with the following code:
 ```lua
-function ESX.ShowNotification(title, message, type, length, position)
+function ESX.ShowNotification(message, type, length, position, title)
     TriggerEvent("s1n_notify:notify", {
-        type = type,
-        title = title,
+        type = type or "success",
+        title = title or "Notification",
         message = message,
         duration = length,
         theme = "colorful",
-        position = position
+        position = position or "top-right"
     })
 end
 ```
 Note that you will need to modify any calls to the `ESX.ShowNotification` function in your scripts to match the new parameters. Here's an example:
 ```lua
-ESX.ShowNotification("Title", "Hello everyone!", "success", 5000, "top-right")
+ESX.ShowNotification("Hello everyone!", "success", 5000, "top-right", "Title")
 ```
 
 ### <img src="https://www.gitbook.com/cdn-cgi/image/width=256,dpr=2,height=40,fit=contain,format=auto/https%3A%2F%2F1645475769-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FBTxg66Z0GQkOQS46Nzn3%252Flogo%252F2VUg8eCqX2nybWhxImyU%252FLogotype%2520-%2520Display%2520Picture%2520-%2520Stylized%2520-%2520Red.png%3Falt%3Dmedia%26token%3Df2dea7ab-8c44-41a5-ad45-6b0fd8f6248e" width="90"/>
@@ -74,18 +74,18 @@ end
 ```
 Replace it with the following code:
 ```lua
-function QBCore.Functions.Notify(title, message, type, length, position)
+function QBCore.Functions.Notify(message, type, length, position, title)
     TriggerEvent("s1n_notify:notify", { 
-        type = type, 
+        type = type or "success", 
         title = title, 
         message = message, 
         duration = length, 
         theme = "colorful", 
-        position = position
+        position = position or "top-right"
     })
 end
 ```
 Note that you will need to modify any calls to the `QBCore.Functions.Notify` function in your scripts to match the new parameters. Here's an example:
 ```lua
-QBCore.Functions.Notify("Title", "Hello everyone !", "success", 5000, "top-right")
+QBCore.Functions.Notify("Hello everyone !", "success", 5000, "top-right", "Title")
 ```
