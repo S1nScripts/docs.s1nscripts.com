@@ -199,4 +199,7 @@ Config.Timeouts = {
     -- The time in milliseconds after which the player won't be able to accept a shared account invite sent by another player
     AcceptSharedAccountInvite = 2 * 60 * 1000
 }
+
+-- The maximum amount that can be deposited, transfered or withdrawn in a single transaction
+Config.MaxAmountPerTransaction = 10000000
 ```
