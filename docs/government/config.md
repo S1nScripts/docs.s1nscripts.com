@@ -141,13 +141,31 @@ Config.Peds = {
     }
 }
 
--- These are the grades that you can use in the government job
--- They will be automatically added to the database, no need to add them manually
+
+
+-- Set this to true if you want to automatically add the jobs and grades to the database, otherwise set it to false and add them manually in your database (if you're using ESX) or jobs.lua (if you're using QBCore)
+Config.AutoAddJobsAndGrades = true
+
+-- Add the jobs that you want to use in the script (for the grades below). If Config.AutoAddJobsAndGrades is set to true, the jobs will be automatically added.
+-- You can add as many jobs as you want
+Config.Jobs = {
+    {
+        -- The name of the job (this is the name that will be used in the database)
+        name = "gov",
+        -- The label of the job
+        label = "Government",
+    },
+}
+
+-- These are the grades that you can use with jobs listed in Config.Jobs
+-- They will be automatically added to the database, no need to add them manually (if Config.AutoAddJobsAndGrades is set to true)
 -- You can add as many grades as you want
 Config.Grades = {
     ["1"] = {
         -- The name of the grade
         name = "Governor",
+        -- The name of the job associated with the grade (this is the name that will be used in the database)
+        jobName = "gov",
         -- The features that the grade has access to
         access = {
             ["TaxationSystem"] = true,
@@ -163,6 +181,8 @@ Config.Grades = {
     ["2"] = {
         -- The name of the grade
         name = "Secretary of State",
+        -- The name of the job associated with the grade
+        jobName = "gov",
         -- The features that the grade has access to
         access = {
             ["AppointmentSystem"] = true,
@@ -174,6 +194,8 @@ Config.Grades = {
     ["3"] = {
         -- The name of the grade
         name = "Treasurer",
+        -- The name of the job associated with the grade
+        jobName = "gov",
         -- The features that the grade has access to
         access = {
             ["TaxationSystem"] = true,
@@ -185,6 +207,8 @@ Config.Grades = {
     ["4"] = {
         -- The name of the grade
         name = "Government Agent",
+        -- The name of the job associated with the grade
+        jobName = "gov",
         -- The features that the grade has access to
         access = {},
         -- The salary of the grade
