@@ -28,7 +28,8 @@ We highly recommend you to read carefully each step written below.
 7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the script by adding `start s1n_spawnselector` to your `server.cfg` file.
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_spawnselector` script folder.
-10. If you use QBCore, please follow the [Adaptation to QBCore](#adaptation-to-qbcore) section.
+10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
+11. If you use QBCore, please follow the [Adaptation to QBCore](#adaptation-to-qbcore) section.
 
 
 ## Adaptation to ESX

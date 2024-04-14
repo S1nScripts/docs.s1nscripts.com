@@ -42,3 +42,4 @@ INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 ```
 
 11. Configure the script by modifying the values in the `config.lua` file located in the `s1n_atmrobbery/shared/` script folder.
+12. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.

@@ -29,3 +29,4 @@ We highly recommend you to read carefully each step written below.
 7. Start the banking system by adding `start s1n_banking` to your `server.cfg` file.
 8. Please insert the SQL queries in your database (you can find them in the `s1n_banking/database.sql` file).
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_banking/shared/` script folder.
+10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
