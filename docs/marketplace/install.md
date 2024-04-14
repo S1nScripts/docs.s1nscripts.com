@@ -28,5 +28,6 @@ We highly recommend you to read carefully each step written below.
 7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the script by adding `start s1n_marketplace` after `qb-core` (if you use QBCore) or `es_extended` (if you use ESX) has been started to your `server.cfg` file.
 9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_marketplace/shared` script folder.
-10. (optional) If you use qb-target, start the script after `qb-target` has been started to your `server.cfg` file.
-1(optional) If you use ox-target, start the script after `ox_target` has been started to your `server.cfg` file.
+10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
+11. (optional) If you use qb-target, start the script after `qb-target` has been started to your `server.cfg` file.
+12. (optional) If you use ox-target, start the script after `ox_target` has been started to your `server.cfg` file.

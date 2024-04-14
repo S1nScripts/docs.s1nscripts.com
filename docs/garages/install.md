@@ -34,6 +34,7 @@ We highly recommend you to read carefully each step written below.
 13. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 14. Start the garage system by adding `start s1n_garages` to your `server.cfg` file.
 15. Configure the script by modifying the values in the `config.lua` file located in the `s1n_garages` script folder.
+16. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
 
 ## Configuration
 
