@@ -17,13 +17,14 @@ Config = Config or { }
 -- Set to true to show debug messages in the console
 Config.debugMode = true
 
+-- This is going to be removed in a future version because s1n_lib is going to handle the framework detection
 Config.Framework = {
-    FrameworkName  = 'QBCore', -- Choose your framework: ESX or QBCore
-    QBCoreFileName = 'qb-core', -- The name of the QBCore resource
+    FrameworkName  = "QBCore", -- Choose your framework: ESX or QBCore
+    QBCoreFileName = "qb-core", -- The name of the QBCore resource
     OldESX         = false, -- Set to true if you're using an older version of ESX which still uses the ESX event esx:getSharedObject
-    ESXEvent       = 'esx:getSharedObject', -- The name of the ESX event (if you're using an older version of ESX)
-    ESXFileName    = 'es_extended', -- The name of the ESX resource
-    SQLWrapper     = 'oxmysql'
+    ESXEvent       = "esx:getSharedObject", -- The name of the ESX event (if you're using an older version of ESX)
+    ESXFileName    = "es_extended", -- The name of the ESX resource
+    SQLWrapper     = "oxmysql"
 }
 
 -- You need to verify that the following scripts are exactly named like this or change the names here
@@ -44,7 +45,7 @@ Config.Keys = {
     -- If you're not using a target script, you can set the key to open the bank menu here
     OpenUI = {
         -- Refer to the first comment to see the list of all the available keys
-        Key         = 'E',
+        Key         = "E",
         -- Distance from the location position (if it's a bank) otherwise from the ATM position
         UseDistance = 1.0
     }
@@ -89,7 +90,7 @@ Config.BankLocations = {
             -- The scale of the blip
             Scale      = 1.0,
             -- The name of the blip
-            Label      = 'Bank',
+            Label      = "Bank",
             -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
             ShortRange = true
         },
@@ -110,7 +111,7 @@ Config.BankLocations = {
             -- Set to true to show a ped
             Active   = false,
             -- The model of the ped (https://docs.fivem.net/docs/game-references/ped-models/)
-            Model    = 'a_m_m_indian_01',
+            Model    = "a_m_m_indian_01",
             -- The position of the ped
             Position = vector3(-1212.07, -332.02, 37.78 - 1.0),
             -- The heading of the ped
@@ -132,7 +133,7 @@ Config.BankLocations = {
             -- The scale of the blip
             Scale      = 1.0,
             -- The name of the blip
-            Label      = 'Bank',
+            Label      = "Bank",
             -- Sets whether or not the blip should only be displayed when nearby, or on the minimap.
             ShortRange = true
         },
@@ -153,7 +154,7 @@ Config.BankLocations = {
             -- Set to true to show a ped
             Active   = false,
             -- The model of the ped (https://docs.fivem.net/docs/game-references/ped-models/)
-            Model    = 'a_m_m_indian_01',
+            Model    = "a_m_m_indian_01",
             -- The position of the ped
             Position = vector3(-1212.07, -332.02, 37.78 - 1.0),
             -- The heading of the ped
@@ -172,23 +173,23 @@ Config.Credit = {
     SecurityDeposit = 25,
     -- Different credit durations that can be selected in the menu
     Duration        = {
-        { Label = '1 week', Time = 60 * 60 * 24 * 7 },
-        { Label = '2 weeks', Time = 60 * 60 * 24 * 14 },
-        { Label = '1 month', Time = 60 * 60 * 24 * 30 },
-        { Label = '3 months', Time = 60 * 60 * 24 * 90 }
+        { Label = "1 week", Time = 60 * 60 * 24 * 7 },
+        { Label = "2 weeks", Time = 60 * 60 * 24 * 14 },
+        { Label = "1 month", Time = 60 * 60 * 24 * 30 },
+        { Label = "3 months", Time = 60 * 60 * 24 * 90 }
     },
 }
 
 -- Configuration to access a society account
 Config.SocietyRanks = {
     -- Job name (Needs to be the EXACT (including uppercase, lowercase) name of the job)
-    ['police'] = {
+    ["police"] = {
         -- Job grades (Needs to be the EXACT name of the job grade)
         -- Create: Set to true to allow the player to create a society account
         -- Login: Set to true to allow the player to access the society account (if the account is already created)
-        ['chief']      = { Create = true, Login = true },
-        ['lieutenant'] = { Create = false, Login = true },
-        ['sergeant']   = { Create = false, Login = true }
+        ["chief"]      = { Create = true, Login = true },
+        ["lieutenant"] = { Create = false, Login = true },
+        ["sergeant"]   = { Create = false, Login = true }
     }
 }
 
