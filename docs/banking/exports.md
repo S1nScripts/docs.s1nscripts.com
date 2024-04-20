@@ -22,7 +22,7 @@ Creates a history transaction for the specified account.
 local account = {
     iban = 'RO1234567890123456789012'
 }
-exports['s1n_banking']:CreateTransaction(account, 'deposit', 'Paycheck', 1000)
+exports["s1n_banking"]:CreateTransaction(account, "deposit", "Paycheck", 1000)
 ```
 
 ### GetAccountData
@@ -37,5 +37,32 @@ Gets the account data for the specified account.
 local account = {
     type = 'useraccount'
 }
-local accountData = exports['s1n_banking']:GetAccountData(source, account)
+local accountData = exports["s1n_banking"]:GetAccountData(source, account)
+```
+
+
+### **ONLY FOR QBCORE** AddMoneyToSociety
+Adds money to the specified society account. (It's meant to replace qb-banking `AddMoney` export)
+
+**Parameters:**
+- `societyName` (string) - The name of the society.
+- `amount` (number) - The amount to add to the society account.
+- `reason` (string) - The reason for adding money to the society account.
+
+**Example**
+```lua
+exports["s1n_banking"]:AddMoneyToSociety("police", 1000, "Paycheck")
+```
+
+### **ONLY FOR QBCORE** RemoveMoneyFromSociety
+Removes money from the specified society account. (It's meant to replace qb-banking `RemoveMoney` export)
+
+**Parameters:**
+- `societyName` (string) - The name of the society.
+- `amount` (number) - The amount to remove from the society account.
+- `reason` (string) - The reason for removing money from the society account.
+
+**Example**
+```lua
+exports['s1n_banking']:RemoveMoneyFromSociety("police", 1000, "Paycheck")
 ```
