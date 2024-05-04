@@ -182,9 +182,9 @@ Config.Credit = {
 
 -- Configuration to access a society account
 Config.SocietyRanks = {
-    -- Job name (Needs to be the EXACT (including uppercase, lowercase) name of the job)
+    -- Job name (Needs to be the EXACT name of the job IN LOWERCASE !)
     ["police"] = {
-        -- Job grades (Needs to be the EXACT name of the job grade)
+        -- Job grades (Needs to be the EXACT name of the job grade IN LOWERCASE !)
         -- Create: Set to true to allow the player to create a society account
         -- Login: Set to true to allow the player to access the society account (if the account is already created)
         ["chief"]      = { Create = true, Login = true },
@@ -201,6 +201,6 @@ Config.Timeouts = {
     AcceptSharedAccountInvite = 2 * 60 * 1000
 }
 
--- The maximum amount that can be deposited, transfered or withdrawn in a single transaction
+-- The maximum amount that can be deposited, transferred or withdrawn in a single transaction
 Config.MaxAmountPerTransaction = 10000000
 ```
