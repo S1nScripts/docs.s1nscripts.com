@@ -14,6 +14,8 @@ For both QBCore and ESX :
 ```lua
 Config = Config or { }
 
+-- To modify the loaded language file, go to the fxmanifest.lua file an replace `english.lua` with the name of the language file you want to use.
+
 -- Set to true to show debug messages in the console
 Config.debugMode = true
 
