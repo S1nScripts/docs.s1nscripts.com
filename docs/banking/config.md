@@ -205,4 +205,9 @@ Config.Timeouts = {
 
 -- The maximum amount that can be deposited, transferred or withdrawn in a single transaction
 Config.MaxAmountPerTransaction = 10000000
+
+Config.ChangeIban = {
+    -- The price to change the IBAN
+    Price = 5000
+}
 ```
