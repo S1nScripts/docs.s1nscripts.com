@@ -4,7 +4,7 @@ title: Installation
 sidebar_label: Installation
 ---
 
-![S1nScripts Logo](https://dunb17ur4ymx4.cloudfront.net/packages/images/912da05be2201d833de8ab962c8949abadee2087.jpg)
+![S1nScripts Logo](https://dunb17ur4ymx4.cloudfront.net/packages/images/c51c22495d1d374824fc5ee961248a624a65c47d.jpg)
 
 # Government System
 ## Installation
