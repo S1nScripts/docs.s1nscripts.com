@@ -17,7 +17,7 @@ We highly recommend you to read carefully each step written below.
 
 :::
 
-### Follow these steps to install the banking system
+### Follow these steps to install the government system
 
 
 1. Download the script from KeyMaster.
