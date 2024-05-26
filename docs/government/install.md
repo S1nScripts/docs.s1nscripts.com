@@ -28,7 +28,7 @@ We highly recommend you to read carefully each step written below.
 6. Rename the `s1n_government-....` folder to `s1n_government`.
 7. Start the banking system by adding `start s1n_government` to your `server.cfg` file.
 8. Please insert the SQL queries in your database (you can find them in the `s1n_government/database.sql` file).
-9. Configure the script by modifying the values in the `config.lua` file located in the `s1n_government/shared/` script folder.
+9. Configure the script by modifying the values in all the files located in the `s1n_government/configuration/` script folder.
 10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
 11. Follow the instructions below to adapt the script to your framework for some features.
 
