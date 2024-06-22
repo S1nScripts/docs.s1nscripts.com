@@ -30,4 +30,3 @@ We highly recommend you to read carefully each step written below.
 8. Please insert the SQL queries in your database (you can find them in the `s1n_banking/database.sql` file).
 9. Configure the script by modifying the values in all the files located in the `s1n_banking/configuration/` script folder.
 10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
-11. (QBCore ONLY) You need to use this version of qb-management : https://github.com/qbcore-framework/qb-management/archive/cea90e34d80cc11967c4aef4f9dcc68b9163056e.zip (this is a temporary fix)
