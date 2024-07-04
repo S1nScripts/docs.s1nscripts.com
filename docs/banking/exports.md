@@ -7,7 +7,23 @@ sidebar_label: Exports
 # Banking System
 ## Exports
 
-### CreateTransaction
+### CheckOpenUI (client-side only)
+If you enabled the debit card system, you can use this export to check if the player has the item in their inventory and it will open the UI if so.
+
+**Example**
+```lua
+exports["s1n_banking"]:checkOpenUI()
+```
+
+### OpenUI (client-side only)
+Opens the banking UI for the player to interact with the banking system.
+
+**Example**
+```lua
+exports["s1n_banking"]:openUI()
+```
+
+### CreateTransaction (server-side only)
 Creates a history transaction for the specified account.
 
 **Parameters:** 
@@ -25,7 +41,7 @@ local account = {
 exports["s1n_banking"]:CreateTransaction(account, "deposit", "Paycheck", 1000)
 ```
 
-### GetAccountData
+### GetAccountData (server-side only)
 Gets the account data for the specified account.
 
 **Parameters:**
@@ -41,7 +57,7 @@ local accountData = exports["s1n_banking"]:GetAccountData(source, account)
 ```
 
 
-### **ONLY FOR QBCORE** AddMoneyToSociety
+### **ONLY FOR QBCORE** AddMoneyToSociety (server-side only)
 Adds money to the specified society account. (It's meant to replace qb-banking `AddMoney` export)
 
 **Parameters:**
@@ -54,7 +70,7 @@ Adds money to the specified society account. (It's meant to replace qb-banking `
 exports["s1n_banking"]:AddMoneyToSociety("police", 1000, "Paycheck")
 ```
 
-### **ONLY FOR QBCORE** RemoveMoneyFromSociety
+### **ONLY FOR QBCORE** RemoveMoneyFromSociety (server-side only)
 Removes money from the specified society account. (It's meant to replace qb-banking `RemoveMoney` export)
 
 **Parameters:**
