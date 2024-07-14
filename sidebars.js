@@ -84,6 +84,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Billing/Contract System',
+      items: ['billingcontract/install', 'billingcontract/config']
+    },
+    {
+      type: 'category',
       label: 'The NPC Placer',
       items: ['npcplacer/config']
     },
