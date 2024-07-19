@@ -24,26 +24,12 @@ For both ESX and QBCore:
 ```lua
 Config = Config or {}
 
+-- Make sure to also configure s1n_lib, check s1n_lib/configuration/ folder.
+
 -- Set this to true if you want to enable debug mode (for developers and support)
 Config.debugMode = true
 
--- Framework settings
-Config.Framework = {
-    -- If you use ESX, you need to set this to 'ESX'
-    -- If you use QBCore, you need to set this to 'QBCore'
-    FrameworkName = 'QBCore',
-    -- The name of the QBCore resource, this is only used if you use QBCore
-    QBCoreFileName = 'qb-core',
-    -- Set to true if you use the old ESX (not ESX Legacy)
-    OldESX = false,
-    -- If you use the old ESX, define the event name here to get the ESX object (by default it's 'esx:getSharedObject')
-    ESXEvent = 'esx:getSharedObject',
-    -- The name of the ESX resource, this is only used if you use ESX
-    ESXFileName = 'es_extended',
-    -- The name of the SQL wrapper you use (You can set : mysql-async, oxmysql, ghmattimysql). You need to have the resource installed and running before this script.
-    SQLWrapper = 'oxmysql'
-}
-
+-- Scripts names used for the exports
 Config.ExportNames = {
     s1nLib = "s1n_lib",
 
@@ -55,12 +41,6 @@ Config.UseEsxLoadout = false
 
 -- If you use ox-inventory, set this to true to add support for it
 Config.UseOxInventory = false
-
--- If you use qb-target, set this to true to add support for it
-Config.UseQbTarget = false
-
--- If you use ox-target, set this to true to add support for it
-Config.UseOxTarget = false
 
 -- Default values to advertise a product (minimum and maximum hours and the price per minute)
 Config.Advertisement = { Min = 1, Max = 24, Price = 1 } -- Price = price per minute
@@ -140,6 +120,7 @@ Config.Marketplaces = {
         -- If you want to disable the possibility to see the seller name, set this to false otherwise set it to true
         ShowSellerName = true,
         -- Set to "bank" to use the bank account for the transactions, set to "cash" to use the cash for the transactions
+        -- If you're on a blackmarket type and you've set Config.BlackMarketUseDirtyMoney to true, this variable will be ignored and will still use the dirty money
         PaymentMethod = "bank",
     }
 }
