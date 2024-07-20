@@ -26,11 +26,12 @@ We highly recommend you to read carefully each step written below.
 4. Rename the `s1n_lib-....` folder to `s1n_lib`.
 5. Drag the `s1n_government` folder into your `resources` directory.
 6. Rename the `s1n_government-....` folder to `s1n_government`.
-7. Start the banking system by adding `start s1n_government` to your `server.cfg` file.
-8. Please insert the SQL queries in your database (you can find them in the `s1n_government/database.sql` file).
-9. Configure the script by modifying the values in all the files located in the `s1n_government/configuration/` script folder.
-10. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
-11. Follow the instructions below to adapt the script to your framework for some features.
+7. Start the lib by adding `start s1n_lib` to your `server.cfg` file.
+8. Start the banking system by adding `start s1n_government` to your `server.cfg` file.
+9. Please insert the SQL queries in your database (you can find them in the `s1n_government/database.sql` file).
+10. Configure the script by modifying the values in all the files located in the `s1n_government/configuration/` script folder.
+11. Configure the library by modifying the values in all the files contained in the `configuration/` folder located in the `s1n_lib/` script folder.
+12. Follow the instructions below to adapt the script to your framework for some features.
 
 #### Auto update jobs
 
