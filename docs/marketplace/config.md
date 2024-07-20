@@ -122,6 +122,6 @@ Config.Marketplaces = {
         -- Set to "bank" to use the bank account for the transactions, set to "cash" to use the cash for the transactions
         -- If you're on a blackmarket type and you've set Config.BlackMarketUseDirtyMoney to true, this variable will be ignored and will still use the dirty money
         PaymentMethod = "bank",
-    }
+    },
 }
 ```
