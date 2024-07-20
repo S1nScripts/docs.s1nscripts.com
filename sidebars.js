@@ -85,7 +85,7 @@ module.exports = {
     {
       type: 'category',
       label: 'The Billing/Contract System',
-      items: ['billing/install', 'billing/config']
+      items: ['billing/install', 'billing/config', 'billing/exports']
     },
     {
       type: 'category',
