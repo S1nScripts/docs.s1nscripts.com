@@ -155,6 +155,11 @@ Config.Invoice = {
                 },
             }
         }
-    }
+    },
+
+    note = {
+        -- The maximum length of the note when creating an invoice
+        maxLength = 40,
+    },
 }
 ```
