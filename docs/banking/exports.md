@@ -32,7 +32,6 @@ It doesn't add or remove money from the account, it's just for logging purposes.
 - `action` (string) - The action that will be displayed in the transaction history.
 - `label` (string) - The label that will be displayed in the transaction history.
 - `amount` (number) - The amount that will be displayed in the transaction history.
-- **OPTIONAL**: `id` (string) - The UUID of the transaction. If not provided, a random UUID will be generated.
 
 **Example**
 ```lua
