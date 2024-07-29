@@ -102,6 +102,9 @@ Config.Marketplaces = {
         },
         -- Marker settings
         Marker = {
+            -- Set to false to disable the marker
+            Enable = true,
+
             Type = 2,
             Rotation = { 0.0, 180.0, 0.0 },
             Scale = 0.4,
@@ -151,6 +154,9 @@ Config.Marketplaces = {
         },
         -- Marker settings
         Marker = {
+            -- Set to false to disable the marker
+            Enable = true,
+
             Type = 2,
             Rotation = { 0.0, 180.0, 0.0 },
             Scale = 0.4,
