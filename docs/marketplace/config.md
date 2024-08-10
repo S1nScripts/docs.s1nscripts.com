@@ -29,6 +29,9 @@ Config = Config or {}
 -- Set this to true if you want to enable debug mode (for developers and support)
 Config.debugMode = true
 
+-- If set to true, the script will ignore the target script you have on your server and will use the keyboard keys to interact with the markets (opening the UI)
+Config.DisableTargetScript = false
+
 -- Scripts names used for the exports
 Config.ExportNames = {
     s1nLib = "s1n_lib",
@@ -138,7 +141,7 @@ Config.Marketplaces = {
         -- Here is an example of a whitelist with 2 jobs: SellerCheck = { ['police'] = true, ['ambulance'] = true }
         SellerCheck = false,
         -- The location of the marketplace (X, Y, Z)
-        Location = vector3(36.35, -1019.83, 29.6),
+        Location = vector3(40.53, -1021.39, 29.52),
         -- Blip settings
         Blip = {
             -- Set to false to disable the blip
