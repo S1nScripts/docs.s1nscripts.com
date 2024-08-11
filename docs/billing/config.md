@@ -82,13 +82,13 @@ Config.Invoice = {
     -- All configurations related to the VAT system
     vat = {
         -- Enable or disable the VAT system
-        enabled = true,
+        enabled = false,
 
         -- The tax rate for the invoices (Must be a number between 0 and 1, example: 0.2 = 20%)
         rate = 0.2,
 
         -- The exact name of the company which will receive the VAT (If empty, the VAT won't be send to anyone but still be applied)
-        beneficiaryCompany = "ambulance"
+        beneficiaryCompany = ""
     },
 
     -- The default items which can be selected when creating an invoice
