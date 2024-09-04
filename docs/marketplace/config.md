@@ -32,6 +32,12 @@ Config.debugMode = true
 -- If set to true, the script will ignore the target script you have on your server and will use the keyboard keys to interact with the markets (opening the UI)
 Config.DisableTargetScript = false
 
+-- Config variables related to the inventory items containing metadata, specifically for the durability here
+Config.DurabilityItem = {
+    -- If you don't want to be able to add an item to a marketplace which have 0 in durability, set this to true
+    enable = false,
+}
+
 -- Scripts names used for the exports
 Config.ExportNames = {
     s1nLib = "s1n_lib",
