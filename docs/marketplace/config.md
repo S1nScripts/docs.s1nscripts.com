@@ -13,6 +13,8 @@ sidebar_label: Config
 By default the script will try to detect your inventory script. If it's detected, it will use the images from your inventory script. 
 If it's not detected or which to use another nui path, go to `s1n_lib/configuration/shared/inventory.config.lua` and look for `imagePath`. There are some comments in the file to help you.
 
+For the vehicles, the images (.png) must have the exact same name as the vehicles model.
+
 ## Config files
 
 There is also a config file in `s1n_marketplace/configuration/server/webhook.config.lua` that you can modify to your liking.
