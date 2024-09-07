@@ -8,17 +8,14 @@ sidebar_label: Config
 
 ## Adding images to the marketplace
 
-### Adding new images for the items
+### Adding new images for the items and vehicles
 
-You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the item name in your database or framework config file.
+By default the script will try to detect your inventory script. If it's detected, it will use the images from your inventory script. 
+If it's not detected or which to use another nui path, go to `s1n_lib/configuration/shared/inventory.config.lua` and look for `imagePath`. There are some comments in the file to help you.
 
-### Adding new images for the vehicles
+## Config files
 
-You need to add an image (.png) in the `s1n_marketplace/html/assets` folder with the **exact same name** as the vehicle model in your database.
-
-## Config file
-
-There is also a config file in `s1n_marketplace/server/config.lua` that you can modify to your liking.
+There is also a config file in `s1n_marketplace/configuration/server/webhook.config.lua` that you can modify to your liking.
 
 For both ESX and QBCore:
 ```lua
