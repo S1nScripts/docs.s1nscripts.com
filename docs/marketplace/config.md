@@ -110,17 +110,24 @@ Config.Marketplaces = {
         },
         -- Marker settings
         Marker = {
-            -- Set to false to disable the marker
+            -- Set to false to disable the marker or set to true to enable the marker
             Enable = true,
 
+            -- The type of the marker (you can find the list of types here: https://docs.fivem.net/docs/game-references/markers/)
             Type = 2,
+            -- The rotation of the marker (X, Y, Z)
             Rotation = { 0.0, 180.0, 0.0 },
+            -- The scale of the marker (1.0 is the default scale)
             Scale = 0.4,
+            -- The color of the marker (R, G, B, A)
             Color = { R = 222, G = 186, B = 77, A = 255 },
-            -- Set to false to disable the marker's animation
+            -- Set to false to disable the marker's animation (bobbing up and down)
             BobUpAndDown = true,
+            -- Set to true to make the marker face the camera
             FaceCamera = true,
+            -- Distance at which the marker will be visible
             MarkerDistance = 5.0,
+            -- Distance at which the marker's text will be visible
             TextDistance = 2.0 
         },
         -- If you want to disable the possibility to sell vehicles, set this to true otherwise set it to false
@@ -165,14 +172,21 @@ Config.Marketplaces = {
             -- Set to false to disable the marker
             Enable = true,
 
+            -- The type of the marker (you can find the list of types here: https://docs.fivem.net/docs/game-references/markers/)
             Type = 2,
+            -- The rotation of the marker (X, Y, Z)
             Rotation = { 0.0, 180.0, 0.0 },
+            -- The scale of the marker (1.0 is the default scale)
             Scale = 0.4,
+            -- The color of the marker (R, G, B, A)
             Color = { R = 222, G = 186, B = 77, A = 255 },
-            -- Set to false to disable the marker's animation
+            -- Set to false to disable the marker's animation (bobbing up and down)
             BobUpAndDown = true,
+            -- Set to true to make the marker face the camera
             FaceCamera = true,
+            -- Distance at which the marker will be visible
             MarkerDistance = 5.0,
+            -- Distance at which the marker's text will be visible
             TextDistance = 2.0
         },
         -- If you want to disable the possibility to sell vehicles, set this to true otherwise set it to false
