@@ -89,6 +89,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'The Locker/Container System',
+      items: ['locker/install', 'locker/config']
+    },
+    {
+      type: 'category',
       label: 'The NPC Placer',
       items: ['npcplacer/config']
     },
