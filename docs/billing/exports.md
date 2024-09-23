@@ -149,3 +149,11 @@ exports["s1n_billing"]:markInvoiceAsPaid({
     id = "INV-123456"
 })
 ```
+
+### openBillingMenu (client-side only)
+Open the billing menu
+
+**Example**
+```lua
+exports["s1n_billing"]:openBillingMenu()
+```
