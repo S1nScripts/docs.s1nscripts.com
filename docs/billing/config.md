@@ -88,6 +88,7 @@ Config.Invoice = {
         rate = 0.2,
 
         -- The exact name of the company which will receive the VAT (If empty, the VAT won't be send to anyone but still be applied)
+        -- If you're using ESX, you need to use the following name: "society_<job_name>" (example: "society_police")
         beneficiaryCompany = ""
     },
 
