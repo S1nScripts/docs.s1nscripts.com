@@ -6,14 +6,6 @@ sidebar_label: Common issues
 
 ## Issues
 
-If you encounter the following errors:
-
-- `You lack the required entitlement to use X`
-- `Failed to verify protected resource X`
-- `Error parsing script @Y in resource X: @Y: syntax error near ...`
-
-You can find the solutions below.
-
 ## Solutions for each error
 
 ### You lack the required entitlement to use X
@@ -32,3 +24,13 @@ This error message indicates that the server artifacts are outdated. In order to
 
 Try downloading again the script from KeyMaster and put it in your server with an FTP Client different from FileZilla like WinSCP.
 Verify that the script doesn't contain any uppercase letters in the script's name.
+
+### syntax error near '<\1>'
+
+his error usually occurs when the FTP client (FileZilla, WinSCP...) you're using isn't correctly configured for FiveM scripts. 
+
+➡ **Here is how to solve it:**
+
+- If you're using FileZilla, set the **Transfer Type** to **Binary** like the screenshot I sent.
+- You may be using a FiveM server artifact version lower 4752 meaning it's outdated. Update it to the recommended version. If you're using a Windows Server go to https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/, if you're on Linux : https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
+- If you didn't use any FTP client like FileZilla but you **drag and drop it** with Remote Desktop Control that will still damage the files. Please **drag and drop** the zip and unzip it directly on your server and not on your computer.
