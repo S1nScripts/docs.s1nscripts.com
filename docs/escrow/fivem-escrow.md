@@ -8,11 +8,11 @@ sidebar_label: Common issues
 
 ## Solutions for each error
 
-### You lack the required entitlement to use X
+### `You lack the required entitlement to use X`
 
 To resolve this issue, make sure that your server's license key is owned by the same keymaster account that owns the asset. If it is, restart your server. If not, transfer the asset to the same account as your server's license key.
 
-### Failed to verify protected resource X
+### `Failed to verify protected resource X`
 
 If you come across this error, it indicates that the files were damaged during the download process. This problem frequently arises while using FileZilla as it tends to corrupt the files. To prevent this issue, consider using an alternative FTP client like WinSCP.
 
@@ -25,7 +25,7 @@ This error message indicates that the server artifacts are outdated. In order to
 Try downloading again the script from KeyMaster and put it in your server with an FTP Client different from FileZilla like WinSCP.
 Verify that the script doesn't contain any uppercase letters in the script's name.
 
-### syntax error near '<\1>'
+### `syntax error near '<\\1>'`
 
 his error usually occurs when the FTP client (FileZilla, WinSCP...) you're using isn't correctly configured for FiveM scripts. 
 
