@@ -2,11 +2,144 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.s1nscripts.com/blog</id>
     <title>S1nScripts Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2024-10-22T07:15:16.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.s1nscripts.com/blog"/>
     <subtitle>S1nScripts Blog</subtitle>
     <icon>https://docs.s1nscripts.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[FiveM Server Performance Optimization: Best Practices & Tips (2024 Guide)]]></title>
+        <id>https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization</id>
+        <link href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization"/>
+        <updated>2024-10-22T07:15:16.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to optimize your FiveM server performance with our comprehensive guide covering best practices, configuration tips, and proven optimization techniques.]]></summary>
+        <content type="html"><![CDATA[<p>Running a smooth FiveM server requires careful optimization and regular maintenance. This comprehensive guide will walk you through proven techniques to enhance your server's performance and reduce lag.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-server-performance-metrics">Understanding Server Performance Metrics<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#understanding-server-performance-metrics" class="hash-link" aria-label="Direct link to Understanding Server Performance Metrics" title="Direct link to Understanding Server Performance Metrics">​</a></h2>
+<p>Before diving into optimization, it's crucial to understand key performance indicators:</p>
+<ul>
+<li><strong>Server tick rate</strong>: Ideal range is 48-60ms</li>
+<li><strong>CPU usage</strong>: Should stay below 80%</li>
+<li><strong>Memory consumption</strong>: Monitor for memory leaks</li>
+<li><strong>Network latency</strong>: Target &lt; 100ms for optimal gameplay</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="essential-server-configuration-tweaks">Essential Server Configuration Tweaks<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#essential-server-configuration-tweaks" class="hash-link" aria-label="Direct link to Essential Server Configuration Tweaks" title="Direct link to Essential Server Configuration Tweaks">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="basic-servercfg-optimization">Basic server.cfg Optimization<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#basic-servercfg-optimization" class="hash-link" aria-label="Direct link to Basic server.cfg Optimization" title="Direct link to Basic server.cfg Optimization">​</a></h3>
+<div class="language-lua codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lua codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token operator" style="color:rgb(137, 221, 255)">#</span><span class="token plain"> Performance</span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain">related settings</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set onesync on</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set onesync_population </span><span class="token keyword" style="font-style:italic">false</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_enforceGameBuild </span><span class="token number" style="color:rgb(247, 140, 108)">2944</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_clockSync </span><span class="token keyword" style="font-style:italic">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_scriptHookAllowed </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token operator" style="color:rgb(137, 221, 255)">#</span><span class="token plain"> Connection settings</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">sv_maxClients </span><span class="token number" style="color:rgb(247, 140, 108)">48</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_endpointPrivacy </span><span class="token keyword" style="font-style:italic">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token operator" style="color:rgb(137, 221, 255)">#</span><span class="token plain"> Network optimization</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">sv_scriptHookAllowed </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_forceIndirectListing </span><span class="token keyword" style="font-style:italic">true</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onesync-configuration">OneSync Configuration<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#onesync-configuration" class="hash-link" aria-label="Direct link to OneSync Configuration" title="Direct link to OneSync Configuration">​</a></h3>
+<p>OneSync is crucial for server performance. Here's how to optimize it:</p>
+<ol>
+<li>Enable OneSync Legacy</li>
+<li>Configure entity culling</li>
+<li>Set proper population density</li>
+<li>Adjust streaming range</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="resource-management">Resource Management<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#resource-management" class="hash-link" aria-label="Direct link to Resource Management" title="Direct link to Resource Management">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="script-loading-order">Script Loading Order<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#script-loading-order" class="hash-link" aria-label="Direct link to Script Loading Order" title="Direct link to Script Loading Order">​</a></h3>
+<p>Optimize your resource loading sequence:</p>
+<ol>
+<li>Core framework resources</li>
+<li>Database connections</li>
+<li>Essential game mechanics</li>
+<li>Optional features</li>
+<li>Non-essential scripts</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="resource-monitoring">Resource Monitoring<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#resource-monitoring" class="hash-link" aria-label="Direct link to Resource Monitoring" title="Direct link to Resource Monitoring">​</a></h3>
+<div class="language-lua codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lua codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token operator" style="color:rgb(137, 221, 255)">#</span><span class="token plain"> Add to server</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">cfg</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set game_enableTaskScheduler </span><span class="token keyword" style="font-style:italic">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set game_enableOptimizedScheduler </span><span class="token keyword" style="font-style:italic">true</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database-optimization">Database Optimization<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#database-optimization" class="hash-link" aria-label="Direct link to Database Optimization" title="Direct link to Database Optimization">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mysql-performance-tips">MySQL Performance Tips<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#mysql-performance-tips" class="hash-link" aria-label="Direct link to MySQL Performance Tips" title="Direct link to MySQL Performance Tips">​</a></h3>
+<ol>
+<li>Implement connection pooling</li>
+<li>Use proper indexing</li>
+<li>Regular database maintenance</li>
+<li>Query optimization</li>
+</ol>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- Example of an optimized query</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">SELECT</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">FROM</span><span class="token plain"> players </span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">WHERE</span><span class="token plain"> last_seen </span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token plain"> DATE_SUB</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token function" style="color:rgb(130, 170, 255)">NOW</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">INTERVAL</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">7</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">DAY</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">INDEX</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">last_seen</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-performance-issues-and-solutions">Common Performance Issues and Solutions<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#common-performance-issues-and-solutions" class="hash-link" aria-label="Direct link to Common Performance Issues and Solutions" title="Direct link to Common Performance Issues and Solutions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="script-related-problems">Script-Related Problems<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#script-related-problems" class="hash-link" aria-label="Direct link to Script-Related Problems" title="Direct link to Script-Related Problems">​</a></h3>
+<ol>
+<li>
+<p><strong>Memory Leaks</strong></p>
+<ul>
+<li>Monitor resource memory usage</li>
+<li>Implement garbage collection</li>
+<li>Regular server restarts</li>
+</ul>
+</li>
+<li>
+<p><strong>CPU Bottlenecks</strong></p>
+<ul>
+<li>Identify heavy scripts</li>
+<li>Implement async operations</li>
+<li>Optimize loops and functions</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="network-optimization">Network Optimization<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#network-optimization" class="hash-link" aria-label="Direct link to Network Optimization" title="Direct link to Network Optimization">​</a></h3>
+<div class="language-lua codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lua codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- Network configuration</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">setr voice_useNativeAudio </span><span class="token keyword" style="font-style:italic">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">setr voice_useSendingRangeOnly </span><span class="token keyword" style="font-style:italic">true</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">set sv_maxConcurrentResources </span><span class="token number" style="color:rgb(247, 140, 108)">100</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-optimization-techniques">Advanced Optimization Techniques<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#advanced-optimization-techniques" class="hash-link" aria-label="Direct link to Advanced Optimization Techniques" title="Direct link to Advanced Optimization Techniques">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="entity-management">Entity Management<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#entity-management" class="hash-link" aria-label="Direct link to Entity Management" title="Direct link to Entity Management">​</a></h3>
+<ol>
+<li>
+<p><strong>Entity Culling</strong></p>
+<div class="language-lua codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lua codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- Add to your resource manifest</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">lua54 </span><span class="token string" style="color:rgb(195, 232, 141)">'yes'</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">game </span><span class="token string" style="color:rgb(195, 232, 141)">'gta5'</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">fx_version </span><span class="token string" style="color:rgb(195, 232, 141)">'cerulean'</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>Stream Distance</strong></p>
+<div class="language-lua codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lua codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">-- Optimized streaming distance</span><span class="token plain"></span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">SetStreamDistance</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">500.0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-monitoring-tools">Performance Monitoring Tools<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#performance-monitoring-tools" class="hash-link" aria-label="Direct link to Performance Monitoring Tools" title="Direct link to Performance Monitoring Tools">​</a></h3>
+<ol>
+<li>
+<p><strong>Server Monitoring</strong></p>
+<ul>
+<li>txAdmin dashboard</li>
+<li>Resource monitor</li>
+<li>Network statistics</li>
+</ul>
+</li>
+<li>
+<p><strong>Diagnostic Tools</strong></p>
+<ul>
+<li>FiveM debug console</li>
+<li>Performance profiler</li>
+<li>Memory snapshots</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices-for-long-term-performance">Best Practices for Long-Term Performance<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#best-practices-for-long-term-performance" class="hash-link" aria-label="Direct link to Best Practices for Long-Term Performance" title="Direct link to Best Practices for Long-Term Performance">​</a></h2>
+<ol>
+<li>Regular maintenance schedule</li>
+<li>Backup system implementation</li>
+<li>Update management strategy</li>
+<li>Resource audit process</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-testing">Performance Testing<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#performance-testing" class="hash-link" aria-label="Direct link to Performance Testing" title="Direct link to Performance Testing">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="stress-testing-protocol">Stress Testing Protocol<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#stress-testing-protocol" class="hash-link" aria-label="Direct link to Stress Testing Protocol" title="Direct link to Stress Testing Protocol">​</a></h3>
+<ol>
+<li>Simulate player load</li>
+<li>Monitor resource usage</li>
+<li>Check for memory leaks</li>
+<li>Verify network stability</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="optimization-checklist">Optimization Checklist<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#optimization-checklist" class="hash-link" aria-label="Direct link to Optimization Checklist" title="Direct link to Optimization Checklist">​</a></h2>
+<p>✓ Server configuration review<br>
+<!-- -->✓ Resource audit<br>
+<!-- -->✓ Database optimization<br>
+<!-- -->✓ Network settings<br>
+<!-- -->✓ Entity management<br>
+<!-- -->✓ Monitoring tools setup</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Optimizing your FiveM server is an ongoing process that requires regular attention and maintenance. By following these best practices and implementing the suggested optimizations, you can significantly improve your server's performance and player experience.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-resources">Additional Resources<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#additional-resources" class="hash-link" aria-label="Direct link to Additional Resources" title="Direct link to Additional Resources">​</a></h3>
+<ul>
+<li><a href="https://docs.fivem.net/" target="_blank" rel="noopener noreferrer">Official FiveM Documentation</a></li>
+<li><a href="https://forum.cfx.re/" target="_blank" rel="noopener noreferrer">Community Forums</a></li>
+<li><a href="https://your-store-link/" target="_blank" rel="noopener noreferrer">Performance Monitoring Tools</a></li>
+</ul>
+<hr>
+<p><em>Need professional scripts optimized for performance? Check out our <a href="https://docs.s1nscripts.com/blog/tutorials/your-store-link">premium FiveM scripts</a> designed for maximum efficiency.</em></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://docs.s1nscripts.com/blog/welcome</id>
