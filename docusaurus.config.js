@@ -47,6 +47,10 @@ const config = {
           googleTagManager: {
             containerId: 'G-4FVP30D7HK',
           },
+          gtag: {
+            trackingID: 'G-4FVP30D7HK',
+            anonymizeIP: true,
+          },
         }
       ),
     ],
