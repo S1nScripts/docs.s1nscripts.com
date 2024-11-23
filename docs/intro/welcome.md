@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 title: Welcome to S1nScripts
-sidebar_label: Welcome
 ---
 
 # Welcome to S1nScripts
