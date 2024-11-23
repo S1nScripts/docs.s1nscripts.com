@@ -17,10 +17,8 @@ module.exports = {
         id: 'intro/welcome',
     },
     {
-      type: 'category',
-      label: 'S1nScripts',
-      items: ['intro/faq'],
-      collapsed: false,
+      type: 'doc',
+      id: 'intro/faq',
     },
     {
       type: 'category',
