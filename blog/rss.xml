@@ -4,7 +4,7 @@
         <title>S1nScripts Blog</title>
         <link>https://docs.s1nscripts.com/blog</link>
         <description>S1nScripts Blog</description>
-        <lastBuildDate>Sat, 23 Nov 2024 14:13:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Nov 2024 14:22:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[FiveM Server Performance Optimization: Best Practices & Tips (2024 Guide)]]></title>
             <link>https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization</link>
             <guid>https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization</guid>
-            <pubDate>Sat, 23 Nov 2024 14:13:41 GMT</pubDate>
+            <pubDate>Sat, 23 Nov 2024 14:22:16 GMT</pubDate>
             <description><![CDATA[Learn how to optimize your FiveM server performance with our comprehensive guide covering best practices, configuration tips, and proven optimization techniques.]]></description>
             <content:encoded><![CDATA[<p>Running a smooth FiveM server requires careful optimization and regular maintenance. This comprehensive guide will walk you through proven techniques to enhance your server's performance and reduce lag.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-server-performance-metrics">Understanding Server Performance Metrics<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#understanding-server-performance-metrics" class="hash-link" aria-label="Direct link to Understanding Server Performance Metrics" title="Direct link to Understanding Server Performance Metrics">​</a></h2>
