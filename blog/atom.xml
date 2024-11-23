@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.s1nscripts.com/blog</id>
     <title>S1nScripts Blog</title>
-    <updated>2024-11-23T14:22:16.000Z</updated>
+    <updated>2024-11-23T14:27:45.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.s1nscripts.com/blog"/>
     <subtitle>S1nScripts Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[FiveM Server Performance Optimization: Best Practices & Tips (2024 Guide)]]></title>
         <id>https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization</id>
         <link href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization"/>
-        <updated>2024-11-23T14:22:16.000Z</updated>
+        <updated>2024-11-23T14:27:45.000Z</updated>
         <summary type="html"><![CDATA[Learn how to optimize your FiveM server performance with our comprehensive guide covering best practices, configuration tips, and proven optimization techniques.]]></summary>
         <content type="html"><![CDATA[<p>Running a smooth FiveM server requires careful optimization and regular maintenance. This comprehensive guide will walk you through proven techniques to enhance your server's performance and reduce lag.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-server-performance-metrics">Understanding Server Performance Metrics<a href="https://docs.s1nscripts.com/blog/tutorials/fivem-server-optimization#understanding-server-performance-metrics" class="hash-link" aria-label="Direct link to Understanding Server Performance Metrics" title="Direct link to Understanding Server Performance Metrics">​</a></h2>
