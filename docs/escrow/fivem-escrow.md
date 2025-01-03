@@ -27,7 +27,7 @@ Verify that the script doesn't contain any uppercase letters in the script's nam
 
 ### `syntax error near '<\\1>'`
 
-his error usually occurs when the FTP client (FileZilla, WinSCP...) you're using isn't correctly configured for FiveM scripts. 
+This error usually occurs when the FTP client (FileZilla, WinSCP...) you're using isn't correctly configured for FiveM scripts. 
 
 ➡ **Here is how to solve it:**
 
