@@ -27,14 +27,14 @@ We highly recommend you to read carefully each step written below.
 6. Rename the `s1n_lib-....` folder to `s1n_lib`.
 7. Start the library by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the atm robbery system by adding `start s1n_atmrobbery` to your `server.cfg` file.
-9. **(if you're using ESX)** Please insert SQL query in your database :
+9. **(if you're using ESX)** Please insert SQL query in your database. The images for these items (for your inventory script) are not provided by us, you have to add them yourself. 
 ```sql
 INSERT INTO `items` (`name`, `label`, `weight`) VALUES
 	('drill', 'Drill', 1),
 	('rope', 'Rope', 1),
     ('c4', 'C4', 1);
 ```
-10. **(if you're using QBCore)** Please add these items to **qb-core/shared/items.lua**
+10. **(if you're using QBCore)** Please add these items to **qb-core/shared/items.lua**. The images for these items (for your inventory script) are not provided by us, you have to add them yourself.
 ```txt 
 ['drill'] = { ['name'] = 'drill', ['label'] = 'Drill', ['weight'] = 0, ['type'] = 'item', ['image'] = 'drill.png', ['unique'] = true, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = ''},
 ['rope'] = { ['name'] = 'rope', ['label'] = 'Rope', ['weight'] = 0, ['type'] = 'item', ['image'] = 'rope.png', ['unique'] = true, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = ''},
