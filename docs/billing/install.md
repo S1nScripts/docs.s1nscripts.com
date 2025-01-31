@@ -23,7 +23,7 @@ We highly recommend you to read carefully each step written below.
 3. Drag the `s1n_lib` folder into your `resources` directory.
 4. Rename the `s1n_lib-....` folder to `s1n_lib`.
 5. Drag the `s1n_billing` folder into your `resources` directory.
-6. Rename the `s1n_billing-....` folder to `s1n_banking`.
+6. Rename the `s1n_billing-....` folder to `s1n_billing`.
 7. Start the lib by adding `start s1n_lib` to your `server.cfg` file.
 8. Start the script by adding `start s1n_billing` to your `server.cfg` file.
 9. No need to insert SQL queries in your database. The script will create the tables automatically.
