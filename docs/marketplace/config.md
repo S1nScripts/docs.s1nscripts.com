@@ -10,11 +10,19 @@ sidebar_label: Config
 
 ### Adding new images for the items and vehicles
 
+#### Where are the images located ?
+
 By default the script will try to detect your inventory script. 
 If it's detected, it will use the images from your inventory script (so if you want to add / modify images, you have to do it in your inventory script, in the folder where the images are.). 
 If it's not detected or you wish to use another nui path, go to `s1n_lib/configuration/shared/inventory.config.lua` and look for `imagePath`. There are some comments in the file to help you.
 
-For the vehicles, the images (.png) must have the exact same name as the vehicles model (the one you use to spawn it with `/car <model>` in-game). The images need to be in the same place as the inventory images.
+#### What about the vehicles images ?
+
+For the vehicles, the images (.png) must have the exact same name as the vehicles model (The `gameName` of the vehicle) but in lowercase and without spaces. 
+It's usually in the file `vehicles.meta` (when it's an imported car). 
+For the default GTA V vehicles, you can find their display name here : https://forge.plebmasters.de/vehicles
+
+The images need to be in the same place as the inventory images.
 
 ## Config files
 
