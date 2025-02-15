@@ -7,6 +7,8 @@ sidebar_label: Exports
 # Banking System
 ## Exports
 
+⚠️ If you're on QBCore and also using qb-banking, you can use qb-banking exports (s1n_banking is synchronized with qb-banking). ⚠️
+
 ### CheckOpenUI (client-side only)
 If you enabled the debit card system, you can use this export to check if the player has the item in their inventory and it will open the UI if so.
 
