@@ -118,6 +118,11 @@ module.exports = {
         },
         {
           type: 'category',
+          label: '💸 The Boss Menu',
+          items: ['bossmenu/install', 'bossmenu/config', 'bossmenu/exports']
+        },
+        {
+          type: 'category',
           label: '🧍 The NPC Placer',
           items: ['npcplacer/config']
         },
