@@ -78,7 +78,7 @@ print(json.encode(accountData))
 ```
 
 
-### **ONLY FOR QBCORE** AddMoneyToSociety (server-side only)
+### AddMoneyToSociety (server-side only)
 Adds money to the specified society account. (It's meant to replace qb-banking `AddMoney` export)
 
 **Parameters:**
@@ -91,7 +91,7 @@ Adds money to the specified society account. (It's meant to replace qb-banking `
 exports["s1n_banking"]:AddMoneyToSociety("police", 1000, "Paycheck")
 ```
 
-### **ONLY FOR QBCORE** RemoveMoneyFromSociety (server-side only)
+### RemoveMoneyFromSociety (server-side only)
 Removes money from the specified society account. (It's meant to replace qb-banking `RemoveMoney` export)
 
 **Parameters:**
