@@ -79,10 +79,10 @@ print(json.encode(accountData))
 
 
 ### AddMoneyToSociety (server-side only)
-Adds money to the specified society account. (It's meant to replace qb-banking `AddMoney` export)
+Adds money to the specified society account. 
 
 **Parameters:**
-- `societyName` (string) - The name of the society.
+- `societyName` (string) - The name of the society. (Make sure to use the exact name! Check your database to verify the name. It might include the `society_` prefix)
 - `amount` (number) - The amount to add to the society account.
 - `reason` (string) - The reason for adding money to the society account.
 
@@ -92,10 +92,10 @@ exports["s1n_banking"]:AddMoneyToSociety("police", 1000, "Paycheck")
 ```
 
 ### RemoveMoneyFromSociety (server-side only)
-Removes money from the specified society account. (It's meant to replace qb-banking `RemoveMoney` export)
+Removes money from the specified society account.
 
 **Parameters:**
-- `societyName` (string) - The name of the society.
+- `societyName` (string) - The name of the society. (Make sure to use the exact name! Check your database to verify the name. It might include the `society_` prefix)
 - `amount` (number) - The amount to remove from the society account.
 - `reason` (string) - The reason for removing money from the society account.
 
