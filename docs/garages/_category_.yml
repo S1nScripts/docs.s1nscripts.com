@@ -1,0 +1,10 @@
+position: 4 # float position is supported
+label: 'The Garage System'
+collapsible: true # make the category collapsible
+collapsed: false # keep the category open by default
+className: red
+link:
+  type: generated-index
+  title: 'The Garage System'
+customProps:
+  description: This description can be used in the swizzled DocCard
